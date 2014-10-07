@@ -1,0 +1,77 @@
+********************************************************************************
+PACKAGE-LOG: 2014-07-07 23:06:19
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	0.5.4
+WORDPRESS:	3.9.1
+PHP INFO:	5.5.10 | SAPI: apache2handler
+SERVER:		Apache/2.2.25 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.5 PHP/5.5.10 mod_ssl/2.2.25 OpenSSL/0.9.8y DAV/2 mod_perl/2.0.8 Perl/v5.18.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (128M default) 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP
+MYSQLDUMP:    Not Supported
+MYSQLTIMEOUT: 5000 
+TABLES: total:12 | filtered:0 | create:12 
+FILTERED: [] 
+wp_commentmeta (0) 
+wp_comments (1) 
+wp_duplicator_packages (2) 
+wp_links (0) 
+wp_options (149) 
+wp_postmeta (989) 
+wp_posts (68) 
+wp_term_relationships (7) 
+wp_term_taxonomy (2) 
+wp_terms (2) 
+wp_usermeta (19) 
+wp_users (1) 
+SQL CREATED: 20140707_coreymargulis_53bb27e3944b51079140707230611_database.sql 
+SQL FILE SIZE: 610.42KB 
+SQL RUNTIME: 0.11 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Users/Margulis/Dropbox/Websites/Portfolio/wordpress 
+ARCHIVE FILE: 20140707_coreymargulis_53bb27e3944b51079140707230611_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	35.2MB 
+STATS:	Dirs 193 | Files 1,686 | Links 0 
+SQL ADDED: 20140707_coreymargulis_53bb27e3944b51079140707230611_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 1879
+    [filename] => /Users/Margulis/Dropbox/Websites/Portfolio/wordpress/wp-snapshots/tmp/20140707_coreymargulis_53bb27e3944b51079140707230611_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 18.45MB 
+ARCHIVE RUNTIME: 4.81 sec. 
+
+******************************************************************************** 
+INSTALLER: 
+******************************************************************************** 
+INSTALLER FILE: Build Start 
+INSTALLER FILE: Build Finished 
+INSTALLER FILE: Preping for use 
+INSTALLER FILE: Template parsed with new data 
+INSTALLER FILE: Complete [/Users/Margulis/Dropbox/Websites/Portfolio/wordpress/wp-snapshots/tmp/20140707_coreymargulis_53bb27e3944b51079140707230611_installer.php] 
+
+********************************************************************************
+RECORD ID:[2]
+FILE SIZE: Archive:18.45MB | SQL:610.42KB | Installer:409.54KB
+TOTAL PROCESS RUNTIME: 4.96 sec.
+DONE PROCESSING => 20140707_coreymargulis 2014-07-07 23:06:24
+********************************************************************************
+ 
