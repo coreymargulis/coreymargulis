@@ -14,7 +14,7 @@
 			<li><a id="commencement" href="commencement">Commencement</a></li>
 			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
 			<li><a id="sullivan-galleries" href="sullivan-galleries">Sullivan Galleries</a></li>
-			<li><a id="ongoing" href="ongoing">Campus Signs</a></li>
+			<li><a id="ongoing" href="ongoing">Campus Signz</a></li>
 			<!-- <li><a id="about" href="/about">About</a> -->
 			<!-- <li><a href="/blog">Blog</a></li> -->
 		</ul>
