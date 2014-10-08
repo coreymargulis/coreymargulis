@@ -2,13 +2,13 @@
 
 <?php $bg = get_field( 'hero-image' ); ?>
 
-<div class="hero-image" style="background-image: url(<?=$bg?>)"></div>
 
-<!--
+
+
 <div class="hero-image-container">
-	
+	<div class="hero-image" style="background-image: url(<?=$bg?>)"></div>
 </div>
--->
+
 
 
 			<div id="content">
