@@ -12,6 +12,8 @@
 
 
 			<div id="content">
+			
+			<div class="test">Hi!</div>
 
 				<div id="inner-content" class="wrap cf">
 

@@ -1435,75 +1435,17 @@ HEADER STYLES
   text-align: center;
   font-size: .8em; }
 
-/*
-	.bar {
-		z-index: 2000;
-		margin-top: 0px;
-		width: 100%;
-		height: 100px;
-		background: none;
-	}
-*/
-	/*
-#toggle {
-		width: 100px;
-		height: 50px;
-		padding: 35px 40px;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		z-index: 1000;
-		cursor: pointer;
-		position: absolute;
-		top: 0;
-		right: 0;
-		
-		.patty {
-			width: 20px;
-			height: 1px;
-			margin: 10px 0;
-			background: $black;
-			transition: all 0.3s;
-			position: relative;
-			transition: all 0.3s;
-			
-			&:before, &:after {
-				content: '';
-				display: block;
-				width: 20px;
-				height: 1px;
-				background: $black;
-				position: absolute;
-				z-index: -1;
-				transition: all 0.3s;
-			}
-			&:before {
-				top: -6px;
-			}
-			&:after {
-				top: 6px;
-			}
-		}
-	}
-	
-	#toggle:hover {
-		transition: all 0.3s;
-	
-		.patty:before {
-			top: -8px;
-		}
-		.patty:after {
-			top: 8px;
-		}
-		
-	}
-*/
+.active {
+  opacity: 1; }
+
 .test {
   height: 40px;
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 50px;
-  background: green; }
+  background: green;
+  opacity: 0; }
 
 .nav-up {
   top: -40px; }

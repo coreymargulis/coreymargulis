@@ -22,6 +22,16 @@ jQuery(document).ready(function() {
   });
 */
 
+$(window).scroll(function() {
+        var paginationTabs = $('.test');
+        var tackNav = $('#toc-open');
+            targetScroll = $('#content').position().top,
+            currentScroll = $('html').scrollTop() || $('body').scrollTop();
+
+        paginationTabs.toggleClass('active', currentScroll >= targetScroll);
+        tackNav.toggleClass('tack', currentScroll >= targetScroll);
+    });
+
 
 /*
 var top_header = '';
