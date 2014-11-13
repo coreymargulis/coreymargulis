@@ -348,7 +348,7 @@ nav {
 
 } /* end nav */
 
-.profile {
+.profile-link-wrapper {
 	position: fixed;
 	bottom: 15px;
 	width: 100%;
@@ -357,8 +357,7 @@ nav {
 	z-index: 1000;
 	overflow: hidden;
 
-
-	#profile-link {
+	.profile-link {
 		width: 150px;
 		padding: 20px 35px;
 		display: block;
@@ -366,8 +365,58 @@ nav {
 		margin: 0 auto;
 		text-align: center;
 		font-size: .8em;
+		border: 0;
+		color: $gray;
+		background-color: transparent;
 	}
 
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.85);
+	z-index: 9999;
+
+	.overlay-close {
+		text-align: center;
+		position: relative;
+		color: $white;
+		top: 10px;
+		left: 10px;
+
+	/*	overflow: hidden;
+		border: none;
+		background: url(../library/images/cross.png) no-repeat center center;
+		text-indent: 200%;
+		color: transparent;
+		outline: none;
+		z-index: 100;*/
+}
+
+	.profile {
+		text-align: center;
+		color: $white;
+		position: relative;
+		top: 50%;
+		height: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.overlay-slidedown {
+	visibility: hidden;
+	transform: translateY(-100%);
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown.open {
+	visibility: visible;
+	transform: translateY(-0%);
+	transition: transform 0.4s ease-in-out;
 }
 
 /*********************
@@ -448,7 +497,7 @@ position: absolute;
 	color: $white;
 	padding: 4em 25% 4.25em 25%;
 	margin-top: 6em;
-	transition: all .1s ease-in-out;
+	transition: all .4s ease-in-out;
 	
 	&:hover {
 		opacity: 1 !important;
