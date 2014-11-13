@@ -1500,6 +1500,7 @@ nav {
       padding-left: 30px; }
 
 /* end nav */
+/* about */
 .profile-link-wrapper {
   position: fixed;
   bottom: 15px;
@@ -1526,7 +1527,7 @@ nav {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 9999; }
   .overlay .overlay-close {
     text-align: center;
@@ -1557,7 +1558,7 @@ nav {
 .overlay-slidedown.open {
   visibility: visible;
   transform: translateY(0%);
-  transition: transform 0.3s ease-in-out; }
+  transition: transform 0.4s ease-in-out; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1580,25 +1581,6 @@ POSTS & CONTENT STYLES
       height: 300px; } }
 
 .hero-image {
-  /*
-  position: absolute;
-  	top: -20%;
-  	left: 0;
-  	width: 100%;
-  	height: 60%;
-  	padding-top: 20%;
-  	background-size: cover;
-  	transform: translateZ(-0.9px) scale(1.9);
-  	z-index: -900;
-  	text-align: center;
-  	background-image: no-repeat 50% 50%;
-  	
-  	-webkit-background-size:cover;
-  	-moz-background-size:cover;
-  	-o-background-size:cover;
-  	-ms-background-size:cover;
-  	background-size:cover;
-  */
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1752,7 +1734,7 @@ POSTS & CONTENT STYLES
     max-width: 100%;
     height: auto; }
   .entry-content pre {
-    background: #323944;
+    background: #000000;
     color: #f8f9fa;
     font-size: 0.9em;
     padding: 1.5em;
