@@ -1529,25 +1529,37 @@ nav {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 9999; }
-  .overlay .overlay-close {
-    text-align: center;
+  .overlay a {
+    color: #fff; }
+    .overlay a:hover, .overlay a:focus {
+      color: #cccccc; }
+  .overlay .overlay-close-container {
     position: relative;
-    color: #fff;
-    top: 10px;
-    left: 10px;
-    /*	overflow: hidden;
-    	border: none;
-    	background: url(../library/images/cross.png) no-repeat center center;
-    	text-indent: 200%;
-    	color: transparent;
-    	outline: none;
-    	z-index: 100;*/ }
+    width: 80px;
+    height: 50px;
+    top: 35px;
+    margin: 0 auto;
+    text-align: center; }
+    .overlay .overlay-close-container .overlay-close {
+      /*position: absolute;
+      bottom: 50px;*/
+      color: #fff;
+      font-size: .85em;
+      /*	overflow: hidden;
+      	border: none;
+      	background: url(../library/images/cross.png) no-repeat center center;
+      	text-indent: 200%;
+      	color: transparent;
+      	outline: none;
+      	z-index: 100;*/ }
   .overlay .profile {
     text-align: center;
-    color: #fff;
+    color: #cccccc;
     position: relative;
     top: 50%;
     height: 50%;
+    width: 300px;
+    margin: 0 auto;
     transform: translateY(-50%); }
 
 .overlay-slidedown {
@@ -1988,6 +2000,9 @@ you can add resource intensive styles.
       margin: 0 auto 1.5em; }
     .entry-content h3 {
       margin: 1.75em auto 0.75em; }
+
+  .overlay .profile {
+    width: 550px; }
 
   /*********************
   NAVIGATION STYLES

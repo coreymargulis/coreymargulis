@@ -382,12 +382,26 @@ nav {
 	background-color: rgba($black, .9);
 	z-index: 9999;
 
-	.overlay-close {
-		text-align: center;
-		position: relative;
+	a {
 		color: $white;
-		top: 10px;
-		left: 10px;
+		&:hover, &:focus {
+			color: darken($white, 20%);
+		}
+	}
+
+	.overlay-close-container {
+		position: relative;
+		width: 80px;
+		height: 50px;
+		top: 35px;
+		margin: 0 auto;
+		text-align: center;
+
+		.overlay-close {
+			/*position: absolute;
+			bottom: 50px;*/
+			color: $white;
+			font-size: .85em;
 
 	/*	overflow: hidden;
 		border: none;
@@ -396,14 +410,18 @@ nav {
 		color: transparent;
 		outline: none;
 		z-index: 100;*/
+	}
+	
 }
 
 	.profile {
 		text-align: center;
-		color: $white;
+		color: darken($white, 20%);
 		position: relative;
 		top: 50%;
 		height: 50%;
+		width: 300px;
+		margin: 0 auto;
 		transform: translateY(-50%);
 	}
 }

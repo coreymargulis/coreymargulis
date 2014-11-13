@@ -241,6 +241,9 @@ POSTS & CONTENT STYLES
   .entry-content h3 {
     margin: 1.75em auto 0.75em; }
 
+.overlay .profile {
+  width: 550px; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
