@@ -1288,6 +1288,40 @@ var acf;
 		
 		    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 					
+		},
+		
+		
+		/*
+		*  val
+		*
+		*  This function will update an elements value and trigger the change event if differene
+		*
+		*  @type	function
+		*  @date	16/10/2014
+		*  @since	5.0.9
+		*
+		*  @param	$el (jQuery)
+		*  @param	val (mixed)
+		*  @return	n/a
+		*/
+		
+		val: function( $el, val ){
+			
+			// vars
+			var orig = $el.val();
+			
+			
+			// update value
+			$el.val( val );
+			
+			
+			// trigger change
+			if( val != orig ) {
+				
+				$el.trigger('change');
+				
+			}
+			
 		}
 		
 	};
@@ -2065,7 +2099,7 @@ frame.on('all', function( e ) {
 			
 			
 			// get targets
-			var $targets = acf.get_fields( {}, $el );
+			var $targets = acf.get_fields( {}, $el, true );
 			
 			
 			// render fields
@@ -2087,10 +2121,8 @@ frame.on('all', function( e ) {
 			});
 			
 			
-			// repeater hide column
-			
 			// action for 3rd party customization
-			//acf.do_action('conditional_logic_render_field');
+			acf.do_action('conditional_logic_complete');
 			
 		},
 		

@@ -25,15 +25,7 @@
 		show_field_cl : function( $field ){
 			
 			// bail early if not a sub field
-			if( ! acf.is_sub_field($field) ) {
-				
-				return;
-				
-			}
-			
-			
-			// bail early if not a td
-			if( ! $field.is('td') ) {
+			if( !$field.is('td') || !acf.is_sub_field($field) ) {
 				
 				return;
 				
@@ -66,16 +58,9 @@
 			// debug
 			//console.log('conditional_logic_hide_field %o', $field);
 			
+			
 			// bail early if not a sub field
-			if( ! acf.is_sub_field($field) ) {
-				
-				return;
-				
-			}
-			
-			
-			// bail early if not a td
-			if( ! $field.is('td') ) {
+			if( !$field.is('td') || !acf.is_sub_field($field) ) {
 				
 				return;
 				
@@ -1165,7 +1150,7 @@
 			// vars
 			var data = acf.prepare_for_ajax({
 				action		: 'acf/fields/gallery/get_sort_order',
-				field_key	: this.settings.key,
+				field_key	: acf.get_field_key(this.$field),
 				post_id		: acf.get('post_id'),
 				ids			: [],
 				sort		: sort
@@ -1313,7 +1298,7 @@
 			// vars
 			var data = acf.prepare_for_ajax({
 				action		: 'acf/fields/gallery/get_attachment',
-				field_key	: this.settings.key,
+				field_key	: acf.get_field_key(this.$field),
 				nonce		: acf.get('nonce'),
 				post_id		: acf.get('post_id'),
 				id			: id
