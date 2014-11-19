@@ -511,7 +511,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-p {
+/*p {
   -ms-word-break: break-all;
   -ms-word-wrap: break-all;
   word-break: break-word;
@@ -526,7 +526,7 @@ p {
   -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig"; }
+  font-feature-settings: "liga", "dlig"; }*/
 
 /******************************************************************
 Site Name:
