@@ -191,8 +191,8 @@ h1, .h1 {
 
 h2, .h2 {
 	font-family: $serif;
-	font-size: 2.35em;
-	line-height: 1.125em;
+	font-size: 1.85em;
+	line-height: 1.185em;
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
@@ -490,7 +490,7 @@ a {
 .next-project {
 	text-align: center;
 	color: $white;
-	padding: 4em 25% 4.25em 25%;
+	padding: 4em 15% 4.25em 15%;
 	margin-top: 6em;
 	transition: all .4s ease-in-out;
 	
@@ -498,14 +498,12 @@ a {
 		opacity: 1 !important;
 		
 	}
-		
 	
 	#next-project {
 		margin-bottom: 20px;
 	}
 	h3 {
 		margin: 0px;
-		
 	}
 }
 
@@ -602,7 +600,7 @@ a {
 	}
 	
 	.media {
-		margin: 3em 0 3em 0;
+		margin: 1.5em 0 3em 0;
 		.caption {
 			font-size: .75em;
 			color: lighten($text-color, 40%);
