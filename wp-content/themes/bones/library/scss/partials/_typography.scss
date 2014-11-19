@@ -69,6 +69,16 @@ $serif:             "LarishNeueSemibold", "Georgia", Cambria, Times New Roman, T
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
+p {
+  -webkit-hyphens:manual;
+  -moz-hyphens:manual;
+  hyphens:manual;
+
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
 /*p {
   -ms-word-break: break-all;
   -ms-word-wrap: break-all;
