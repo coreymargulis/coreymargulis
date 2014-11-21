@@ -191,6 +191,8 @@ POSTS & CONTENT STYLES
     clear: both; }
 
 /* end .entry-content */
+.overlay .overlay-close-container .overlay-close {
+  background-size: 40px 40px; }
 .overlay .profile {
   height: 30%;
   width: 370px; }

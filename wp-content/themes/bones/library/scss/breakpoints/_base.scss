@@ -392,7 +392,7 @@ nav {
 		display: block;
 		width: 44px;
 		height: 44px;
-		top: 35px;
+		bottom: 35px;
 		left: 50%;
 		margin-left: -25px;
 		text-align: center;
@@ -408,7 +408,7 @@ nav {
 			overflow: hidden;
 			border: none;
 			background: url(../../library/images/cross.svg) no-repeat center center;
-			background-size: 44px 44px;
+			background-size: 32px 32px;
 			top: 0;
 			right: 0;
 			text-indent: 200%;
@@ -421,7 +421,7 @@ nav {
 		text-align: center;
 		color: darken($white, 20%);
 		position: relative;
-		top: 20%;
+		top: 30%;
 		height: 50%;
 		width: 248px;
 		margin: 0 auto;
