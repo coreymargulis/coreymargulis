@@ -2004,15 +2004,13 @@ you can add resource intensive styles.
     margin-top: 3em;
     padding: 0; }
 
-  /*********************
+  /********************* 
   POSTS & CONTENT STYLES
   *********************/
   .entry-content {
     padding: 0; }
     .entry-content p, .entry-content h3 {
       max-width: 740px; }
-    .entry-content p {
-      margin: 0 auto 1.5em; }
     .entry-content h3 {
       margin: 1.75em auto 0.75em; }
 

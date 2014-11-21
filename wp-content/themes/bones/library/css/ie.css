@@ -191,8 +191,10 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
-.next-project #next-project {
-  font-size: .8em; }
+.next-project {
+  padding: 4em 25% 4.25em 25%; }
+  .next-project #next-project {
+    font-size: .8em; }
 
 /*
 check your menus here. do they look good?
@@ -229,15 +231,13 @@ HEADER STYLES
   margin-top: 3em;
   padding: 0; }
 
-/*********************
+/********************* 
 POSTS & CONTENT STYLES
 *********************/
 .entry-content {
   padding: 0; }
   .entry-content p, .entry-content h3 {
     max-width: 740px; }
-  .entry-content p {
-    margin: 0 auto 1.5em; }
   .entry-content h3 {
     margin: 1.75em auto 0.75em; }
 
