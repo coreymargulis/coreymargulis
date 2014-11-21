@@ -14,8 +14,8 @@
 			<li><a id="commencement" href="commencement">Commencement</a></li>
 			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
 			<li><a id="sullivan-galleries" href="sullivan-galleries">Sullivan Galleries</a></li>
-			<!-- <li><a id="conversations" href="conversations">Conversations</a></li> -->
-		</ul>
+<!-- 			<li><a id="conversations" href="conversations">Conversations</a></li>
+ -->		</ul>
 	</nav>
 	<div id="background"></div>
 	
@@ -28,41 +28,31 @@
 			        // if you want to remove background
 			        // on mouse out then uncomment below line
 			        $('body').css('background-color', 'transparent');
-			        $("#background").css('visibility', 'hidden');
+			        // $("#background").css('visibility', 'hidden');
 			    })
 			    $("#commencement").hover(function() {
 			        $('body').css('background-color', '<?php the_field('title-color', 49); ?>');
 			    }, function() {
-			        // if you want to remove background
-			        // on mouse out then uncomment below line
 			        $('body').css('background-color', 'transparent');
 			    })
 			    $("#pool-party").hover(function() {
 			        $('ul').css('background-color', '<?php the_field('title-color', 35); ?>');
 			    }, function() {
-			        // if you want to remove background
-			        // on mouse out then uncomment below line
 			        $('ul').css('background-color', 'transparent');
 			    })
 			    $("#pastel-artist").hover(function() {
 			        $('ul').css('background-color', '<?php the_field('title-color', 59); ?>');
 			    }, function() {
-			        // if you want to remove background
-			        // on mouse out then uncomment below line
 			        $('ul').css('background-color', 'transparent');
 			    })
 			    $("#sullivan-galleries").hover(function() {
 			        $('ul').css('background-color', '<?php the_field('title-color', 62); ?>');
 			    }, function() {
-			        // if you want to remove background
-			        // on mouse out then uncomment below line
 			        $('ul').css('background-color', 'transparent');
 			    })
 			    $("#conversations").hover(function() {
 			        $('ul').css('background-color', '<?php the_field('title-color', 117); ?>');
 			    }, function() {
-			        // if you want to remove background
-			        // on mouse out then uncomment below line
 			        $('ul').css('background-color', 'transparent');
 			    })
 			});

@@ -1568,22 +1568,35 @@ nav {
     text-align: center;
     color: #cccccc;
     position: relative;
-    top: 50%;
+    top: 40%;
     height: 50%;
     width: 300px;
-    margin: 0 auto;
-    transform: translateY(-50%); }
+    margin: 0 auto; }
 
 .overlay-slidedown {
+  opacity: 0;
   visibility: hidden;
-  transform: translateY(100%);
-  transition: transform 0.4s ease-in-out, visibility 0s 0.4s; }
+  transition: opacity 0.5s, visibility 0s 0.5s;
+  /*transform: translateY(100%);
+  transition: transform 0.4s ease-in-out, visibility 0s 0.4s;*/ }
+  .overlay-slidedown .profile {
+    opacity: 0.4;
+    transform: translateY(-25%);
+    transition: transform 0.5s, opacity 0.5s; }
 
 .overlay-slidedown.open {
+  opacity: 1;
   visibility: visible;
-  transform: translateY(0%);
-  transition: transform 0.4s ease-in-out; }
+  transition: opacity 0.5s;
+  /*\transform: translateY(-0%);
+  transition: transform 0.4s ease-in-out;*/ }
+  .overlay-slidedown.open .profile {
+    opacity: 1; }
 
+.overlay-slidedown.close .profile {
+  transform: translateY(25%); }
+
+/* end about */
 /*********************
 POSTS & CONTENT STYLES
 *********************/
