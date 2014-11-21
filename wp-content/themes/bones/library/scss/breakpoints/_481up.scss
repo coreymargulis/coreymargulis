@@ -56,6 +56,10 @@ nav {
 		line-height: 1.25;
 		a {
 			font-size: 48px;
+
+			@media screen and ( max-height: 700px ){
+				font-size: 32px;
+			}
 		}
 	}
 }
@@ -135,6 +139,13 @@ POSTS & CONTENT STYLES
 	}
 
 } /* end .entry-content */
+
+.overlay {
+	.profile {
+		height: 30%;
+		width: 370px;
+	}
+}
 
 /*********************
 FOOTER STYLES
