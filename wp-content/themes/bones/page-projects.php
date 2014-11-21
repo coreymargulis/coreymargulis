@@ -15,8 +15,6 @@
 			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
 			<li><a id="sullivan-galleries" href="sullivan-galleries">Sullivan Galleries</a></li>
 			<!-- <li><a id="conversations" href="conversations">Conversations</a></li> -->
-			<!-- <li><a id="about" href="/about">About</a> -->
-			<!-- <li><a href="/blog">Blog</a></li> -->
 		</ul>
 	</nav>
 	<div id="background"></div>
@@ -25,7 +23,7 @@
             $(document).ready(function() {
 			    $("#whats-fresh").hover(function() {
 			        $('body').css('background-color', '<?php the_field('title-color', 54); ?>');
-			          $("#background").css('visibility', 'visible');
+			          //$("#background").css('visibility', 'visible');
 			    }, function() {
 			        // if you want to remove background
 			        // on mouse out then uncomment below line
