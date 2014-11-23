@@ -484,31 +484,35 @@ a {
 	/* height: 70%; */
 	height: 520px;
 	
+	.hero-image {
+		position: relative;	
+		background-size: cover;
+		background-repeat: no-repeat; 
+		background-position: 50% 50%;
+		overflow: hidden;
+		width: 100%; 
+	 	height: 100%;  	
+	}
+
+	.hero-image-caption {
+		font-size: .75em;
+		color: $white;
+		opacity: .5;
+		max-width: 740px;
+		margin: 0 auto;
+		position: relative;
+		top: -30px;
+		text-align: right;
+		padding-right: 1.5em;
+	}
 
 	@media screen and ( max-height: 700px ) and (min-width: 481px){
         height: 400px;
-        }
-
-        
-
-
-
-        	@media screen and ( max-height: 700px ){
+    }   
+    @media screen and ( max-height: 700px ){
         height: 300px;
-        }
+    }
 
-
-
-}
-
-.hero-image {
-	position: relative;	
-	background-size: cover;
-	background-repeat: no-repeat; 
-	background-position: 50% 50%;
-	overflow: hidden;
-	width: 100%; 
- 	height: 100%;  	
 }
 
 .next-project {
@@ -625,6 +629,11 @@ a {
 	
 	.media {
 		margin: 1.5em 0 3em 0;
+		ul, ol {
+			list-style-type: none;
+			padding-bottom: 0;
+			max-width: 100%;
+		}
 		.caption {
 			font-size: .75em;
 			color: lighten($text-color, 40%);
@@ -659,12 +668,18 @@ a {
 
 	ul, ol {
 
+		margin: 0 auto;
+		padding-bottom: 1.5em;
+		max-width: 740px;
+
 		li {}
 
 	}
 
 	ul {
 		
+		list-style-type: disc;
+
 		li {}
 
 	}
@@ -770,6 +785,15 @@ a {
 		padding: 1.5em;
 		margin: 0 0 1.5em;
 		border-radius: 3px;
+	}
+
+	.flex-container {
+		max-width:740px;
+		margin:0 auto;
+
+		ul, ol {
+			
+		}
 	}
 
 } /* end .entry-content */
@@ -924,7 +948,3 @@ FOOTER STYLES
 FLEX CONTAINER STYLES
 *********************/
 	
-.flex-container {
-	max-width:740px;
-	margin:0 auto;
-}
