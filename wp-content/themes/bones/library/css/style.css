@@ -1933,7 +1933,7 @@ tweeners.
   NAVIGATION STYLES
   *********************/
   nav li {
-    line-height: 1.25; }
+    line-height: 1.45; }
     nav li a {
       font-size: 48px; } }
     @media only screen and (min-width: 481px) and (max-height: 700px) {
@@ -2063,6 +2063,7 @@ you can add resource intensive styles.
     /* end current highlighters */ }
     nav li {
       width: auto;
+      line-height: 1.25;
       /*
       plan your menus and drop-downs wisely.
       */
