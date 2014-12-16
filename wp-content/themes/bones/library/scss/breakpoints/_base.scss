@@ -30,12 +30,12 @@ body {
     -webkit-font-smoothing: antialiased;
   	overflow-x: hidden;
   	transition: 1s;
-  	
-  	/*
-perspective: 1px;
-  	transform-style: preserve-3d;
-  	overflow-y: auto;
-*/
+
+  	::selection {
+		background: $black;
+		color: $light-gray;
+	}
+
 }
 
 /********************

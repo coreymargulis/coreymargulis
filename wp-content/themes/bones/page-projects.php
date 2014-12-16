@@ -15,7 +15,7 @@
 			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
 			<li><a id="sullivan-galleries" href="sullivan-galleries">Sullivan Galleries</a></li>
 			<li><a id="conversations" href="conversations">Conversations</a></li>
-			<!-- <li><a id="conversations" href="conversations">Grab Bag</a></li> -->
+			<li><a id="conversations" href="conversations">Campus Signage</a></li>
  		</ul>
 	</nav>
 	<div id="background"></div>

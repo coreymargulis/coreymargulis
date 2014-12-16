@@ -75,10 +75,10 @@ p {
   -ms-word-wrap: break-all;
      word-break: break-word;
   // cleaning up the ragged lines and breaks
-  -webkit-hyphens: auto;
-      -moz-hyphens: auto;
-      -ms-hyphens: auto;
-      hyphens: auto;
+  -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
   // sets a minimum number of characters before and after the break
   -webkit-hyphenate-before: 5;
    -webkit-hyphenate-after: 5;

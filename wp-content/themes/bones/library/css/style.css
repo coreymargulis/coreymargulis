@@ -515,10 +515,10 @@ p {
   -ms-word-break: break-all;
   -ms-word-wrap: break-all;
   word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
   -webkit-hyphenate-before: 5;
   -webkit-hyphenate-after: 5;
   hyphenate-lines: 1;
@@ -1263,12 +1263,10 @@ body {
   background-color: #f8f9fa;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  transition: 1s;
-  	/*
-perspective: 1px;
-  	transform-style: preserve-3d;
-  	overflow-y: auto;
-*/ }
+  transition: 1s; }
+  body ::selection {
+    background: #000000;
+    color: #f8f9fa; }
 
 /********************
 WORDPRESS BODY CLASSES
