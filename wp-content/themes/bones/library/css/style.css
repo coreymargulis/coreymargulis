@@ -515,10 +515,10 @@ p {
   -ms-word-break: break-all;
   -ms-word-wrap: break-all;
   word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
   -webkit-hyphenate-before: 5;
   -webkit-hyphenate-after: 5;
   hyphenate-lines: 1;
@@ -1264,6 +1264,12 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   transition: 1s; }
+<<<<<<< HEAD
+=======
+  body ::selection {
+    background: #000000;
+    color: #f8f9fa; }
+>>>>>>> 9aa64fc8f816dbc80b9964e19f90318f7427f9e2
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1943,7 +1949,7 @@ tweeners.
   NAVIGATION STYLES
   *********************/
   nav li {
-    line-height: 1.25; }
+    line-height: 1.45; }
     nav li a {
       font-size: 48px; } }
     @media only screen and (min-width: 481px) and (max-height: 700px) {
@@ -2073,6 +2079,7 @@ you can add resource intensive styles.
     /* end current highlighters */ }
     nav li {
       width: auto;
+      line-height: 1.25;
       /*
       plan your menus and drop-downs wisely.
       */

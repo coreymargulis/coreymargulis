@@ -31,6 +31,14 @@ body {
   	overflow-x: hidden;
   	transition: 1s;
 
+<<<<<<< HEAD
+=======
+  	::selection {
+		background: $black;
+		color: $light-gray;
+	}
+
+>>>>>>> 9aa64fc8f816dbc80b9964e19f90318f7427f9e2
 }
 
 /********************

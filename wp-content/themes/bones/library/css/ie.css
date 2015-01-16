@@ -143,7 +143,7 @@ h2 {
 NAVIGATION STYLES
 *********************/
 nav li {
-  line-height: 1.25; }
+  line-height: 1.45; }
   nav li a {
     font-size: 48px; }
     @media screen and (max-height: 700px) {
@@ -265,6 +265,7 @@ nav {
   /* end current highlighters */ }
   nav li {
     width: auto;
+    line-height: 1.25;
     /*
     plan your menus and drop-downs wisely.
     */

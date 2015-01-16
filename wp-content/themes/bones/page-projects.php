@@ -14,8 +14,13 @@
 			<li><a id="commencement" href="commencement">Commencement</a></li>
 			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
 			<li><a id="sullivan-galleries" href="sullivan-galleries">Sullivan Galleries</a></li>
+<<<<<<< HEAD
 <!-- 			<li><a id="conversations" href="conversations">Conversations</a></li>
 			<li><a id="conversations" href="conversations">Campus Signage</a></li> -->
+=======
+			<li><a id="conversations" href="conversations">Conversations</a></li>
+			<li><a id="conversations" href="conversations">Campus Signage</a></li>
+>>>>>>> 9aa64fc8f816dbc80b9964e19f90318f7427f9e2
  		</ul>
 	</nav>
 	<div id="background"></div>
