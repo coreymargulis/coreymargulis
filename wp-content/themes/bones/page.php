@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div id="content">
 			
 	<?php $bg = get_field( 'hero-image' ); ?>

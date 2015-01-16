@@ -24,7 +24,7 @@
 -->
 
 
-nav ul #background #whats-fresh {
+<!-- nav ul #background #whats-fresh {
 	background-image: url('<?php the_field("homepage-image", 54); ?>');
-}
+} -->
 
