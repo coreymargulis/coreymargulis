@@ -31,14 +31,12 @@ body {
   	overflow-x: hidden;
   	transition: 1s;
 
-<<<<<<< HEAD
-=======
-  	::selection {
+
+/*  	::selection {
 		background: $black;
 		color: $light-gray;
-	}
+	}*/
 
->>>>>>> 9aa64fc8f816dbc80b9964e19f90318f7427f9e2
 }
 
 /********************
@@ -154,6 +152,8 @@ a, a:visited {
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+		/*text-decoration: underline;*/
+
 	}
 
 	/* on click */
@@ -239,6 +239,12 @@ HEADER STYLES
 	margin: 0 auto;
 	text-align: center;
 	font-size: .9em;
+
+	a {
+		&:hover, &:focus {
+		}
+	}
+
 }
 .active {
 	opacity: 1;
@@ -283,8 +289,8 @@ nav {
 	display: table;
 	z-index: -100;
 
-	-webkit-animation: fade-in .8s ease;
-	animation: fade-in .8s ease;
+	/*-webkit-animation: fade-in .8s ease;
+	animation: fade-in .8s ease;*/
 
 	ul {
 		width: 100%;
@@ -354,7 +360,9 @@ nav {
 
 } /* end nav */
 
-/* about */
+/*********************
+ABOUT
+*********************/
 .profile-link-wrapper {
 	position: fixed;
 	bottom: 15px;
@@ -473,6 +481,8 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
+	
+	z-index: 2;
 	
 	position: relative;
 	/*-webkit-animation: fade-in .8s ease;
@@ -956,13 +966,16 @@ ANIMATIONS
 *********************/
 
 #colorblock {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	
-	z-index: 999;
-	-webkit-animation: fade-in .7s ease-in reverse;
+	z-index: 1;
+	-webkit-animation: fade-in 1s ease-in reverse;
     -webkit-animation-fill-mode: forwards;
+
+    animation: fade-in 1s ease-in reverse;
+    animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade-in {
