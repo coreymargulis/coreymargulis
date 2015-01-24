@@ -1567,7 +1567,8 @@ ABOUT
     height: 50%;
     width: 248px;
     margin: 0 auto;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
 
 .overlay-slidedown {
   opacity: 0;
@@ -1578,7 +1579,9 @@ ABOUT
   .overlay-slidedown .profile {
     opacity: 0.4;
     transform: translateY(-10%) rotateX(15deg);
-    transition: transform 0.5s, opacity 0.5s; }
+    transition: transform 0.5s, opacity 0.5s;
+    -webkit-transform: translateY(-10%) rotateX(15deg);
+    -webkit-transition: transform 0.5s, opacity 0.5s; }
 
 .overlay-slidedown.open {
   opacity: 1;
@@ -1897,6 +1900,11 @@ ANIMATIONS
   animation-fill-mode: forwards; }
 
 @-webkit-keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fade-in {
   from {
     opacity: 0; }
   to {
