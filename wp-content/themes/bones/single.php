@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<div id="colorblock" style="background-color:<?php the_field('title-color'); ?>"></div>
+
 <?php $bg = get_field( 'hero-image' ); ?>
 <div class="hero-image-container">
 	<div class="hero-image" style="background-image: url(<?=$bg?>)"></div>

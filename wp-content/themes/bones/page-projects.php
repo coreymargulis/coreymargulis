@@ -10,12 +10,18 @@
 	<nav>
 		<ul>
 			<li><a id="whats-fresh" href="whats-fresh">What’s Fresh</a></li>
+			<li><a id="campus-signage" href="campus-signage">Campus Signage</a></li>
 			<li><a id="pool-party" href="pool-party">Pool Party</a></li>
 			<li><a id="commencement" href="commencement">Commencement</a></li>
 			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
 			<li><a id="sullivan-galleries" href="sullivan-galleries">Sullivan Galleries</a></li>
+<<<<<<< HEAD
 			<!-- <li><a id="conversations" href="conversations">Conversations</a></li>
 			<li><a id="conversations" href="conversations">Campus Signage</a></li> -->
+=======
+			<!-- <li><a id="conversations" href="conversations">Conversations</a></li> -->
+			
+>>>>>>> 9401eaccdc2b7dd41312278629ade5e1bb584dc4
  		</ul>
 	</nav>
 	<div id="background"></div>
@@ -53,6 +59,11 @@
 			    })
 			    $("#conversations").hover(function() {
 			        $('ul').css('background-color', '<?php the_field('title-color', 117); ?>');
+			    }, function() {
+			        $('ul').css('background-color', 'transparent');
+			    })
+			    $("#campus-signage").hover(function() {
+			        $('ul').css('background-color', '<?php the_field('title-color', 364); ?>');
 			    }, function() {
 			        $('ul').css('background-color', 'transparent');
 			    })

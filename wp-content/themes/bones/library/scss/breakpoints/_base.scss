@@ -31,10 +31,11 @@ body {
   	overflow-x: hidden;
   	transition: 1s;
 
-  	::selection {
+
+/*  	::selection {
 		background: $black;
 		color: $light-gray;
-	}
+	}*/
 
 }
 
@@ -151,6 +152,8 @@ a, a:visited {
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+		/*text-decoration: underline;*/
+
 	}
 
 	/* on click */
@@ -236,6 +239,12 @@ HEADER STYLES
 	margin: 0 auto;
 	text-align: center;
 	font-size: .9em;
+
+	a {
+		&:hover, &:focus {
+		}
+	}
+
 }
 .active {
 	opacity: 1;
@@ -279,6 +288,9 @@ nav {
 	top: 0px;
 	display: table;
 	z-index: -100;
+
+	/*-webkit-animation: fade-in .8s ease;
+	animation: fade-in .8s ease;*/
 
 	ul {
 		width: 100%;
@@ -348,7 +360,9 @@ nav {
 
 } /* end nav */
 
-/* about */
+/*********************
+ABOUT
+*********************/
 .profile-link-wrapper {
 	position: fixed;
 	bottom: 15px;
@@ -394,7 +408,7 @@ nav {
 		height: 44px;
 		bottom: 35px;
 		left: 50%;
-		margin-left: -25px;
+		margin-left: -23px;
 		text-align: center;
 
 		.overlay-close {
@@ -468,21 +482,24 @@ POSTS & CONTENT STYLES
 
 #content {
 	
-position: relative;
-	/*
-top: 60%;
-	background-color: $white;
-*/
-a {
-			&:hover, &:focus {
-				
-				}
-		}
-}
+	z-index: 2;
+	
+	position: relative;
+	/*-webkit-animation: fade-in .8s ease;
+	animation: fade-in .8s ease;*/
+
+	a {
+				&:hover, &:focus {
+					
+					}
+			}
+	}
 
 .hero-image-container {
 	/* height: 70%; */
 	height: 520px;
+/*	-webkit-animation: fade-in .8s ease;
+	animation: fade-in .8s ease;*/
 	
 	.hero-image {
 		position: relative;	
@@ -945,6 +962,24 @@ FOOTER STYLES
 	.copyright {}
 
 /*********************
-FLEX CONTAINER STYLES
+ANIMATIONS
 *********************/
+
+#colorblock {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	
+	z-index: 1;
+	-webkit-animation: fade-in 1s ease-in reverse;
+    -webkit-animation-fill-mode: forwards;
+
+    animation: fade-in 1s ease-in reverse;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 	
