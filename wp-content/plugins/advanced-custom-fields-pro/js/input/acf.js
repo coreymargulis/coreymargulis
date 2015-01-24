@@ -304,12 +304,16 @@ var acf;
 		
 		get_selector: function( s ) {
 			
+			// defaults
+			s = s || '';
+			
+			
 			// vars
 			var selector = '.acf-field';
 			
 			
-			/*
-if( $.isEmptyObject() ) {
+			// compatibility with object
+			if( $.isEmptyObject(s) ) {
 				
 				s = '';
 				
@@ -323,7 +327,6 @@ if( $.isEmptyObject() ) {
 				}
 				
 			}
-*/
 
 
 			// search
@@ -341,6 +344,7 @@ if( $.isEmptyObject() ) {
 			
 			// return
 			return selector;
+			
 		},
 		
 		

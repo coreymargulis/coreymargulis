@@ -3016,6 +3016,66 @@ function acf_get_truncated( $text, $length = 64 ) {
 }
 
 
+/*
+*  acf_get_current_url
+*
+*  This function will return the current URL
+*
+*  @type	function
+*  @date	23/01/2015
+*  @since	5.1.5
+*
+*  @param	n/a
+*  @return	(string)
+*/
+
+function acf_get_current_url() {
+	
+	// vars
+	$home = home_url();
+	$url = home_url($_SERVER['REQUEST_URI']);
+	
+	
+	// test
+	//$home = 'http://acf5/dev/wp-admin';
+	//$url = $home . '/dev/wp-admin/api-template/acf_form';
+	
+	
+	// explode url (4th bit is the sub folder)
+	$bits = explode('/', $home, 4);
+	
+	
+	/*
+	Array (
+	    [0] => http:
+	    [1] => 
+	    [2] => acf5
+	    [3] => dev
+	)
+	*/
+	
+	
+	// handle sub folder
+	if( !empty($bits[3]) ) {
+		
+		$find = '/' . $bits[3];
+		$pos = strpos($url, $find);
+		$length = strlen($find);
+		
+		if( $pos !== false ) {
+			
+		    $url = substr_replace($url, '', $pos, $length);
+		    
+		}
+				
+	}
+	
+	
+	// return
+	return $url;
+	
+}
+
 
 /*
 *  Hacks

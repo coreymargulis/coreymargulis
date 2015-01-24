@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Advanced Custom Fields Pro v5.1.6\n"
+"Project-Id-Version: Advanced Custom Fields Pro v5.1.7\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/advanced-custom-fields\n"
 "POT-Creation-Date: 2013-04-27 17:35+0100\n"
-"PO-Revision-Date: 2015-01-17 22:17:26+0000\n"
+"PO-Revision-Date: 2015-01-22 09:42:49+0000\n"
 "Last-Translator: Martin Lettner <m.lettner@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,50 +20,50 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: acf.php:247
+#: acf.php:245
 #@ acf
 msgid "Field&nbsp;Groups"
 msgstr "Felder-Gruppen"
 
-#: acf.php:249
-#: acf.php:275
+#: acf.php:247
+#: acf.php:273
 #: admin/admin.php:51
 #: pro/fields/flexible-content.php:521
 #@ acf
 msgid "Add New"
 msgstr "Neu erstellen"
 
-#: acf.php:250
+#: acf.php:248
 #@ acf
 msgid "Add New Field Group"
 msgstr "Neue Felder-Gruppe erstellen"
 
-#: acf.php:251
+#: acf.php:249
 #@ acf
 msgid "Edit Field Group"
 msgstr "Felder-Gruppe bearbeiten"
 
-#: acf.php:252
+#: acf.php:250
 #@ acf
 msgid "New Field Group"
 msgstr "Neue Felder-Gruppe"
 
-#: acf.php:253
+#: acf.php:251
 #@ acf
 msgid "View Field Group"
 msgstr "Felder-Gruppe anzeigen"
 
-#: acf.php:254
+#: acf.php:252
 #@ acf
 msgid "Search Field Groups"
 msgstr "Felder-Gruppe suchen"
 
-#: acf.php:255
+#: acf.php:253
 #@ acf
 msgid "No Field Groups found"
 msgstr "Keine Felder-Gruppen gefunden"
 
-#: acf.php:256
+#: acf.php:254
 #@ acf
 msgid "No Field Groups found in Trash"
 msgstr "Keine Felder-Gruppen im Papierkorb gefunden"
@@ -74,17 +74,17 @@ msgstr "Keine Felder-Gruppen im Papierkorb gefunden"
 msgid "Custom Fields"
 msgstr "Eigene Felder"
 
-#: api/api-helpers.php:1165
+#: api/api-helpers.php:1202
 #@ acf
 msgid "Thumbnail"
 msgstr "Miniaturbild"
 
-#: api/api-helpers.php:1166
+#: api/api-helpers.php:1203
 #@ acf
 msgid "Medium"
 msgstr "Mittel"
 
-#: api/api-helpers.php:1167
+#: api/api-helpers.php:1204
 #@ acf
 msgid "Large"
 msgstr "Groß"
@@ -110,24 +110,24 @@ msgstr "Optionen-Seite"
 msgid "Layout"
 msgstr "Layout"
 
-#: acf.php:278
+#: acf.php:276
 #: admin/views/field-group-fields.php:18
 #: admin/views/settings-info.php:109
 #@ acf
 msgid "New Field"
 msgstr "Neues Feld"
 
-#: admin/views/field-group-field.php:77
+#: admin/views/field-group-field.php:78
 #@ acf
 msgid "Field Label"
 msgstr "Bezeichnung"
 
-#: admin/views/field-group-field.php:89
+#: admin/views/field-group-field.php:90
 #@ acf
 msgid "Field Name"
 msgstr "Feld Name"
 
-#: admin/views/field-group-field.php:101
+#: admin/views/field-group-field.php:102
 #: fields/taxonomy.php:707
 #@ acf
 msgid "Field Type"
@@ -153,17 +153,17 @@ msgstr "Duplizieren"
 msgid "Delete"
 msgstr "Löschen"
 
-#: admin/views/field-group-field.php:78
+#: admin/views/field-group-field.php:79
 #@ acf
 msgid "This is the name which will appear on the EDIT page"
 msgstr "Diese Bezeichnung wird im Bearbeiten-Fenster angezeigt."
 
-#: admin/views/field-group-field.php:90
+#: admin/views/field-group-field.php:91
 #@ acf
 msgid "Single word, no spaces. Underscores and dashes allowed"
 msgstr "Ein Wort, keine Leerzeichen, Unterstrich (_) und Bindestrich (-) erlaubt."
 
-#: admin/views/field-group-field.php:203
+#: admin/views/field-group-field.php:204
 #@ acf
 msgid "Close Field"
 msgstr "Feld schließen"
@@ -190,13 +190,13 @@ msgstr "Zusatz-Module"
 msgid "Installed"
 msgstr "Installiert"
 
-#: admin/views/field-group-field.php:114
-#: fields/tab.php:98
+#: admin/views/field-group-field.php:115
+#: fields/tab.php:109
 #@ acf
 msgid "Instructions"
 msgstr "Hinweise"
 
-#: acf.php:273
+#: acf.php:271
 #: admin/field-group.php:178
 #: admin/field-group.php:210
 #: admin/field-group.php:249
@@ -212,7 +212,7 @@ msgstr "Position"
 
 #: admin/field-group.php:255
 #: admin/views/field-group-field-conditional-logic.php:41
-#: admin/views/field-group-field.php:134
+#: admin/views/field-group-field.php:135
 #: fields/page_link.php:555
 #: fields/page_link.php:569
 #: fields/post_object.php:493
@@ -232,7 +232,7 @@ msgstr "Nein"
 
 #: admin/field-group.php:254
 #: admin/views/field-group-field-conditional-logic.php:40
-#: admin/views/field-group-field.php:133
+#: admin/views/field-group-field.php:134
 #: fields/page_link.php:554
 #: fields/page_link.php:568
 #: fields/post_object.php:492
@@ -294,7 +294,7 @@ msgid "All"
 msgstr "Alle"
 
 #: admin/field-groups.php:486
-#@ default
+#@ acf
 msgid "Title"
 msgstr "Titel"
 
@@ -830,12 +830,12 @@ msgstr "kopiere"
 msgid "No fields. Click the <strong>+ Add Field</strong> button to create your first field."
 msgstr "Keine Felder vorhanden. Wählen Sie <strong>+ Feld hinzufügen</strong> und erstellen Sie das erste Feld."
 
-#: admin/views/field-group-field.php:115
+#: admin/views/field-group-field.php:116
 #@ acf
 msgid "Instructions for authors. Shown when submitting data"
 msgstr "Hinweise für Autoren (wird im Editor angezeigt)"
 
-#: admin/views/field-group-field.php:126
+#: admin/views/field-group-field.php:127
 #@ acf
 msgid "Required?"
 msgstr "Erforderlich?"
@@ -1045,13 +1045,13 @@ msgstr "Tags"
 msgid "Send Trackbacks"
 msgstr "Sende Trackbacks"
 
-#: api/api-template.php:1268
+#: api/api-template.php:1272
 #: pro/fields/gallery.php:568
 #@ acf
 msgid "Update"
 msgstr "Aktualisieren"
 
-#: api/api-template.php:1269
+#: api/api-template.php:1273
 #@ acf
 msgid "Post updated"
 msgstr "Beitrag aktualisiert"
@@ -1218,42 +1218,42 @@ msgstr "Ein Titel für die Felder-Gruppe ist erforderlich"
 msgid "Advanced Custom Fields Pro"
 msgstr "Advanced Custom Fields Pro"
 
-#: acf.php:248
+#: acf.php:246
 #@ acf
 msgid "Field Group"
 msgstr "Feld Gruppe"
 
-#: acf.php:274
+#: acf.php:272
 #@ acf
 msgid "Field"
 msgstr "Feld"
 
-#: acf.php:276
+#: acf.php:274
 #@ acf
 msgid "Add New Field"
 msgstr "Feld hinzufügen"
 
-#: acf.php:277
+#: acf.php:275
 #@ acf
 msgid "Edit Field"
 msgstr "Feld ändern"
 
-#: acf.php:279
+#: acf.php:277
 #@ acf
 msgid "View Field"
 msgstr "Feld anzeigen"
 
-#: acf.php:280
+#: acf.php:278
 #@ acf
 msgid "Search Fields"
 msgstr "Felder suchen"
 
-#: acf.php:281
+#: acf.php:279
 #@ acf
 msgid "No Fields found"
 msgstr "Keine Felder gefunden"
 
-#: acf.php:282
+#: acf.php:280
 #@ acf
 msgid "No Fields found in Trash"
 msgstr "Keine Felder-Gruppen im Papierkorb gefunden"
@@ -1279,7 +1279,7 @@ msgid "Move Custom Field"
 msgstr "Feld verschieben"
 
 #: admin/field-group.php:586
-#@ default
+#@ acf
 msgid "Super Admin"
 msgstr "Super Admin"
 
@@ -1482,14 +1482,16 @@ msgid "Label placement"
 msgstr "Platzierung Beschriftung"
 
 #: admin/views/field-group-options.php:60
+#: fields/tab.php:125
 #@ acf
 msgid "Top aligned"
-msgstr "oberhalb"
+msgstr "oben"
 
 #: admin/views/field-group-options.php:61
+#: fields/tab.php:126
 #@ acf
 msgid "Left Aligned"
-msgstr "links angeordnet"
+msgstr "links"
 
 #: admin/views/field-group-options.php:68
 #@ acf
@@ -1532,7 +1534,7 @@ msgstr "Aktualisierung erfolgreich."
 msgid "Data is at the latest version."
 msgstr "Daten entsprechen der letzten Version."
 
-#: api/api-template.php:1405
+#: api/api-template.php:1409
 #@ acf
 msgid "form_attributes"
 msgstr ""
@@ -1747,12 +1749,12 @@ msgstr "Modernes Suchfeld"
 msgid "Use AJAX to lazy load choices?"
 msgstr "AJAX zum Laden der Einträge aktivieren"
 
-#: fields/tab.php:101
+#: fields/tab.php:112
 #@ acf
 msgid "Use \"Tab Fields\" to better organize your edit screen by grouping fields together."
 msgstr "Mit \"Tab Feldern\" können Felder für eine bessere Struktur im Editor in Tabs zusammengefasst werden."
 
-#: fields/tab.php:103
+#: fields/tab.php:114
 #@ acf
 msgid "All fields following this \"tab field\" (or until another \"tab field\" is defined) will be grouped together using this field's label as the tab heading."
 msgstr "Alle Felder, die auf dieses \"Tab Feld\" folgen (oder bis ein weiteres \"Tab Feld\" definiert ist), werden in einem Tab mit dem Namen dieses Felds zusammengefasst."
@@ -2468,7 +2470,7 @@ msgstr "Daten Aktualisierung"
 msgid "See what's new"
 msgstr ""
 
-#: api/api-helpers.php:1215
+#: api/api-helpers.php:1252
 #@ acf
 msgid "Full Size"
 msgstr "Volle Größe"
@@ -2520,12 +2522,12 @@ msgstr "URL eingeben"
 msgid "No embed found for the given URL"
 msgstr "Keine Inhalte für die eingegebene URL gefunden"
 
-#: fields/tab.php:82
+#: fields/tab.php:94
 #@ acf
 msgid "Warning"
 msgstr "Warnung"
 
-#: fields/tab.php:87
+#: fields/tab.php:99
 #@ acf
 msgid "The tab field will display incorrectly when added to a Table style repeater field or flexible content field layout"
 msgstr "Das Tab-Feld wird nicht korrekt angezeigt, wenn es in einem Repeater-Feld im Tabellen-Layout oder in einem Flexibler Inhalt Feld-Layout eingebunden ist."
@@ -2777,12 +2779,6 @@ msgstr "Keine Formatierung"
 msgid "No options pages exist"
 msgstr "Keine Optionen-Seite vorhanden"
 
-#. translators: plugin header field 'Version'
-#: acf.php:0
-#@ acf
-msgid "5.1.6"
-msgstr ""
-
 #: admin/field-group.php:70
 #@ acf
 msgid "Field group deleted."
@@ -2854,22 +2850,22 @@ msgstr "Synchronisiere Felder-Gruppe"
 msgid "Sync"
 msgstr "Synchronisieren"
 
-#: admin/views/field-group-field.php:150
+#: admin/views/field-group-field.php:151
 #@ acf
 msgid "Wrapper Attributes"
 msgstr "Wrapper Attribute"
 
-#: admin/views/field-group-field.php:162
+#: admin/views/field-group-field.php:163
 #@ acf
 msgid "width"
 msgstr "Breite"
 
-#: admin/views/field-group-field.php:177
+#: admin/views/field-group-field.php:178
 #@ acf
 msgid "class"
 msgstr "Klasse"
 
-#: admin/views/field-group-field.php:190
+#: admin/views/field-group-field.php:191
 #@ acf
 msgid "id"
 msgstr "ID"
@@ -2884,7 +2880,7 @@ msgstr ""
 msgid "Toggle All"
 msgstr "Alle umschalten"
 
-#: api/api-helpers.php:1773
+#: api/api-helpers.php:1810
 #@ acf
 msgid "(no title)"
 msgstr "(ohne Titel)"
@@ -2899,16 +2895,16 @@ msgstr "Url"
 msgid "Value must be a valid URL"
 msgstr "Bitte eine gültige URL eingeben"
 
-#: fields/wysiwyg.php:297
+#: fields/wysiwyg.php:298
 #@ default
 msgctxt "Name for the Text editor tab (formerly HTML)"
 msgid "Text"
 msgstr ""
 
-#: fields/wysiwyg.php:298
-#@ default
+#: fields/wysiwyg.php:297
+#@ acf
 msgid "Visual"
-msgstr ""
+msgstr "Visuell"
 
 #: fields/wysiwyg.php:354
 #@ acf
@@ -2945,4 +2941,15 @@ msgstr "Länge"
 #@ acf
 msgid "Remove"
 msgstr "Entfernen"
+
+#. translators: plugin header field 'Version'
+#: acf.php:0
+#@ acf
+msgid "5.1.7"
+msgstr ""
+
+#: fields/tab.php:121
+#@ acf
+msgid "Placement"
+msgstr "Tab Position"
 

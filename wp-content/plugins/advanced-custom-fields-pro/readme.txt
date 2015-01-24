@@ -107,6 +107,10 @@ http://support.advancedcustomfields.com/
 
 == Changelog ==
 
+= 5.1.7.1 =
+* Core: Fixed JS error on data input screens
+* Core: Fixed incorrect return_url when using `acf_form()`
+
 = 5.1.7 =
 * Tab field: Added new placement setting for top aligned / left aligned
 * Image field: Fixed selection bug when attachment popup also contains an image field
