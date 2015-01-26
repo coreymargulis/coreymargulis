@@ -1910,6 +1910,16 @@ ANIMATIONS
   to {
     opacity: 1; } }
 /*********************
+EFFECTS
+*********************/
+.drop-shadow {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px !important; }
+
+/*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them

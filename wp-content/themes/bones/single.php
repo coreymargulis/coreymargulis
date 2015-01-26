@@ -65,7 +65,7 @@
 							        <?php elseif( get_row_layout() == 'image' ): ?>
 							        
 										<div class="media">
-											<img src="<?php the_sub_field("image"); ?>" alt="" />
+											<img src="<?php the_sub_field("image"); ?>" alt="" class="<?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>"/>
 											<div class="caption"><?php the_sub_field("image-caption"); ?></div>
 										</div>
 									
