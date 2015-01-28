@@ -131,16 +131,16 @@
 										
 										if( $images ): ?>
 										    <div class="media">
-										    <div id="slider" class="flexslider <?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>">
-										        <ul class="slides">
-										            <?php foreach( $images as $image ): ?>
-										                <li>
-										                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-										                </li>
-										            <?php endforeach; ?>
-										        </ul>
-										    </div>
-										    <div class="caption"><?php the_sub_field("image-caption"); ?></div>
+											    <div id="slider" class="flexslider <?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>">
+											        <ul class="slides">
+											            <?php foreach( $images as $image ): ?>
+											                <li>
+											                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+											                </li>
+											            <?php endforeach; ?>
+											        </ul>
+											    </div>
+											    <div class="caption"><?php the_sub_field("image-caption"); ?></div>
 										    </div>
 										    
 										<?php endif; ?>
