@@ -31,7 +31,6 @@ body {
   	overflow-x: hidden;
   	transition: 1s;
 
-
 /*  	::selection {
 		background: $black;
 		color: $light-gray;
@@ -221,15 +220,17 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.logo-container {
-	position: absolute;
-	top: 15px;
-	width: 100%;
-	padding-top: 0px;
-	background: none;
-	z-index: 1000;
-	overflow: hidden;
-}
+.logo {
+		position: absolute;
+		top: 15px; 
+		width: 100%;
+		padding-top: 0px;
+/*		background-color: rgba(248,249,250,0);
+*/		z-index: 1000;
+		overflow: hidden;
+
+		/*height: 50px;*/
+} 
 
 #logo {
 	width: 200px;
@@ -250,21 +251,13 @@ HEADER STYLES
 	opacity: 1;
 }
 
-.test {
-	height:40px;
-	position: fixed;
-	top:0;
-	transition: top 0.2s ease-in-out;
-	width: 50px;
-	background: green;
-	opacity: 0;
+.logo-container--pinned {
+    display: block;
+}
+.logo-container--unpinned {
+    display: none;
 }
 
-
-
-.nav-up {
-	top: -40px;
-}
 
 /*********************
 NAVIGATION STYLES (HOMEPAGE)
@@ -852,20 +845,6 @@ margin: 0;
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-
-#test {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100px;
-	height: 100px;
-	background-color: green;
-}
-
-.logo-container--unpinned {
-	display: none;
-	transform: translateY(-100%);
-}
 
 .pagination,
 .wp-prev-next {

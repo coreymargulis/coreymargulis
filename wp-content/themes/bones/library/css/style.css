@@ -1388,20 +1388,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
     text-decoration: none; }
 
 h1, .h1 {
-  font-family: "LarishNeueSemibold", "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "LarishNeueSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   line-height: 1.333em;
   margin: 0 0 .25em 0; }
 
 h2, .h2 {
-  font-family: "LarishNeueSemibold", "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "LarishNeueSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.85em;
   line-height: 1.185em;
   margin-top: 0em;
   margin-bottom: 0em; }
 
 h3, .h3 {
-  font-family: "LarishNeueSemibold", "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "LarishNeueSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25em; }
 
 h4, .h4 {
@@ -1417,14 +1417,16 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-.logo-container {
+.logo {
   position: absolute;
   top: 15px;
   width: 100%;
   padding-top: 0px;
-  background: none;
+  /*		background-color: rgba(248,249,250,0);
+  */
   z-index: 1000;
-  overflow: hidden; }
+  overflow: hidden;
+  /*height: 50px;*/ }
 
 #logo {
   width: 200px;
@@ -1438,17 +1440,11 @@ HEADER STYLES
 .active {
   opacity: 1; }
 
-.test {
-  height: 40px;
-  position: fixed;
-  top: 0;
-  transition: top 0.2s ease-in-out;
-  width: 50px;
-  background: green;
-  opacity: 0; }
+.logo-container--pinned {
+  display: block; }
 
-.nav-up {
-  top: -40px; }
+.logo-container--unpinned {
+  display: none; }
 
 /*********************
 NAVIGATION STYLES (HOMEPAGE)
@@ -1493,7 +1489,7 @@ nav {
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
     nav li a {
-      font-family: "LarishNeueSemibold", "Georgia", Cambria, Times New Roman, Times, serif;
+      font-family: "LarishNeueSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 32px;
       text-rendering: optimizelegibility;
       display: block; }
@@ -1812,18 +1808,6 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-#test {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100px;
-  height: 100px;
-  background-color: green; }
-
-.logo-container--unpinned {
-  display: none;
-  transform: translateY(-100%); }
-
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0; }

@@ -55,6 +55,6 @@
 
 	<body <?php body_class(); ?>>
 
-		<div class="logo-container">
+		<header class="logo">
 				<a id="logo" href="/">Corey Margulis</a>
-		</div>
+		</header>
