@@ -131,7 +131,11 @@
 										
 										if( $images ): ?>
 										    <div class="media">
+<<<<<<< HEAD
 											    <div id="slider" class="flexslider <?php if( get_sub_field('drop-shadow')){ ?>drop-shadow-flexslider<?php } ?>">
+=======
+											    <div id="slider" class="flexslider <?php if( get_sub_field('drop-shadow')){ ?>drop-shadow-slider<?php } ?>">
+>>>>>>> cf98f6afe936be97250e5e89a9e95941c64af6bd
 											        <ul class="slides">
 											            <?php foreach( $images as $image ): ?>
 											                <li>
