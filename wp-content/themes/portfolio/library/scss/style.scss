@@ -1,5 +1,3 @@
-/*! Made with Bones: http://themble.com/bones :) */
-
 /******************************************************************
 Site Name:
 Author:
@@ -16,47 +14,22 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 
 ******************************************************************/
 
-/*********************
-IMPORTING PARTIALS
-These files are needed at the beginning so that we establish all
-our mixins, functions, and variables that we'll be using across
-the whole project.
-*********************/
+// @import "susy";
+@import "vendors/breakpoint";
 
-// normalize: http://necolas.github.io/normalize.css/
-@import "partials/normalize";
 
-// Sass variables
-@import "partials/variables";
+@import "variables/_breakpoints";
+@import "variables/_normalize";
+@import "variables/_colors";
+@import "variables/_typography";
+@import "variables/_functions";
+@import "variables/_mixins";
+@import "variables/_grid";
 
-// typography
-@import "partials/typography";
 
-// Sass functions
-@import "partials/functions";
-
-// import mixins
-@import "partials/mixins";
-
-// the grid
-@import "partials/grid";
-
-/*********************
-IMPORTING MODULES
-Modules are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-I mean, you can do whatever you want. The world is your oyster. Unless
-you hate oysters, then the world is your peanut butter & jelly sandwich.
-*********************/
-
-// alert boxes
-@import "modules/alerts";
-
-// buttons
-@import "modules/buttons";
-
-// forms (inputs & labels)
-@import "modules/forms";
+@import "base/**/*";
+@import "components/**/*";
+@import "layout/**/*";
 
 /*********************
 BASE (MOBILE) SIZE
@@ -142,7 +115,6 @@ be set to display none.
 @media print {
 
 	// styles in print.scss
-	@import "partials/print";
+	@import "variables/print";
 
 }
-

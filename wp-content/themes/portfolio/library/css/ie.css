@@ -21,28 +21,6 @@ import the mixins file so SASS can understand the variables.
 Site Name:
 Author:
 
-Stylesheet: Variables
-
-Here is where we declare all our variables like colors, fonts,
-base values, and defaults. We want to make sure this file ONLY
-contains variables that way our files don't get all messy.
-No one likes a mess.
-
-******************************************************************/
-/*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
-*********************/
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/
-/******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Mixins Stylesheet
 
 This is where you can take advantage of Sass' great features: Mixins.
@@ -81,9 +59,6 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
-/*********************
-PARALLAX
-*********************/
 /******************************************************************
 Site Name:
 Author:
@@ -123,21 +98,12 @@ them in here, they won't work.
 /*********************
 H1, H2, H3, H4, H5 STYLES
 *********************/
-body {
-  font-size: 1.25em; }
-
 h1 {
   	/*
   font-size: 1.25em;
   	line-height: 1.333em;
   	margin: 0 0 .25em 0;
   */ }
-
-h2 {
-  font-size: 2.35em;
-  line-height: 1.25em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
 
 /*********************
 NAVIGATION STYLES

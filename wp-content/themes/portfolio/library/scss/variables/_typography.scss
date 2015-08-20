@@ -1,0 +1,62 @@
+$sans-serif:       "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$serif:            "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-bold:       "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+@font-face {
+    font-family: 'Neuzeit S LT Std Book';
+    src: url('../fonts/NeuzeitSLTStd-Book.eot');
+    src: url('../fonts/NeuzeitSLTStd-Book.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/NeuzeitSLTStd-Book.woff') format('woff'),
+           url('../fonts/NeuzeitSLTStd-Book.ttf') format('truetype'),
+           url('../fonts/NeuzeitSLTStd-Book.svg#0f36e451afbb48ba6ebc31554b154772') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minotaur Light';
+    src: url('../fonts/minotaurweb-light.eot');
+    src: url('../fonts/minotaurweb-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minotaur Bold';
+    src: url('../fonts/minotaurweb-bold.eot');
+    src: url('../fonts/minotaurweb-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minotaur Sans Regular';
+    src: url('../fonts/minotaursansweb-regular.eot');
+    src: url('../fonts/minotaursansweb-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LarishNeueSemibold';
+    src: url('../fonts/larish_neue_semibold.eot');
+    src: url('../fonts/larish_neue_semibold.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/larish_neue_semibold.woff') format('woff'),
+           url('../fonts/larish_neue_semibold.ttf') format('truetype'),
+           url('../fonts/larish_neue_semibold.svg#efd338316301ebc99dc3efa821a37ac9') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontawesome-webfont';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/fontawesome-webfont.woff') format('woff'),
+           url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+           url('../fonts/fontawesome-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

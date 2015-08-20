@@ -9,16 +9,17 @@
 <div class="menu-wrap">
 	<nav>
 		<ul>
-			<li><a id="pool-party" href="pool-party">Pool Party</a></li>
+			<li><a id="" href="">saic.edu</a></li>
 			<li><a id="campus-signage" href="campus-signage">Campus Signage</a></li>
-			<li><a id="whats-fresh" href="whats-fresh">What’s Fresh</a></li>
-			<li><a id="commencement" href="commencement">Commencement</a></li>
+			<li><a id="pool-party" href="pool-party">Pool Party</a></li>
+			<li><a id="" href="">Nichols Tower</a></li>
 			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
-			<li><a id="sullivan-galleries" href="sullivan-galleries">Sullivan Galleries</a></li>		
+			<li><a id="commencement" href="commencement">Commencement</a></li>
+			<li><a id="whats-fresh" href="whats-fresh">What’s Fresh</a></li>
  		</ul>
 	</nav>
 	<div id="background"></div>
-	
+
 		<script type="text/javascript">
             $(document).ready(function() {
 			    $("#whats-fresh").hover(function() {
@@ -66,7 +67,7 @@
 </div>
 
 
-<div class="profile-link-wrapper">
+<!-- <div class="profile-link-wrapper">
 	<a class="profile-link" id="trigger-overlay" href="#">About</a>
 </div>
 
@@ -77,7 +78,7 @@
 	<div class="profile">
 		<?php the_field("profile") ?>
 	</div>
-</div>
+</div> -->
 
 <script>
 	(function() {
@@ -121,4 +122,3 @@
 	  closeBttn.addEventListener( 'click', toggleOverlay );
 	})();
 </script>
-

@@ -1,0 +1,24 @@
+.logo-footer {
+	padding: 1em 0;
+}
+
+#logo-footer {
+	width: 200px;
+	padding: 20px 35px;
+	display: block;
+	/* position: relative; */
+	margin: 0 auto;
+	text-align: center;
+	font-size: .8em;
+	color: $white;
+}
+.active {
+	opacity: 1;
+}
+
+.logo-container--pinned {
+    display: block;
+}
+.logo-container--unpinned {
+    display: none;
+}

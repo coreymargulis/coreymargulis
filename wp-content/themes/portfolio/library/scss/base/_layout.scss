@@ -1,0 +1,33 @@
+.wrap {
+	width: 96%;
+	margin: 0 auto;
+}
+
+.menu-wrap {
+	width: 100%;
+	height: 100%;
+}
+
+.alt {
+  position: relative;
+  background: $process;
+  padding-top: 3em !important;
+  padding-bottom: 3em !important;
+  color: $white !important;
+
+	&:before, &:after {
+	   content: "";
+	   position: absolute;
+	   background: $process;  /* Match the background */
+	   top: 0;
+	   bottom: 0;
+	   width: 9999px;   /* some huge width */
+	   display: block;
+	   }
+	&:before {
+		right: 100%;
+	  	}
+	&:after {
+		left: 100%;
+		}
+}

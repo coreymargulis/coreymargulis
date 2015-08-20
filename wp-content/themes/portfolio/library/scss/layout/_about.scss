@@ -1,0 +1,115 @@
+.profile-link-wrapper {
+	position: fixed;
+	bottom: 15px;
+	width: 100%;
+	padding-top: 0px;
+	background: none;
+	z-index: 1000;
+	overflow: hidden;
+
+	.profile-link {
+		width: 150px;
+		padding: 20px 35px;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		font-size: .9em;
+		color: $gray;
+	}
+
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($black, .9);
+	z-index: 9999;
+
+	a {
+		color: $white;
+		&:hover, &:focus {
+			color: darken($white, 20%);
+		}
+	}
+
+	.overlay-close-container {
+		position: absolute;
+		display: block;
+		width: 44px;
+		height: 44px;
+		bottom: 35px;
+		left: 50%;
+		margin-left: -23px;
+		text-align: center;
+
+		.overlay-close {
+			color: $white;
+			font-size: 1em;
+
+			position: absolute;
+			width: 44px;
+			height: 44px;
+
+			overflow: hidden;
+			border: none;
+			background: url(../../library/images/cross.svg) no-repeat center center;
+			background-size: 32px 32px;
+			top: 0;
+			right: 0;
+			text-indent: 200%;
+			color: transparent;
+			outline: none;
+		}
+	}
+
+	.profile {
+		text-align: center;
+		color: darken($white, 20%);
+		position: relative;
+		top: 20%;
+		height: 50%;
+		width: 248px;
+		margin: 0 auto;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+	}
+
+}
+
+.overlay-slidedown {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	/*transform: translateY(100%);
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;*/
+	.profile {
+		opacity: 0.4;
+    	transform: translateY(-10%) rotateX(15deg);
+    	transition: transform 0.5s, opacity 0.5s;
+
+    	-webkit-transform: translateY(-10%) rotateX(15deg);
+    	-webkit-transition: transform 0.5s, opacity 0.5s;
+	}
+}
+
+.overlay-slidedown.open {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.5s;
+	/*\transform: translateY(-0%);
+	transition: transform 0.4s ease-in-out;*/
+	.profile {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+
+.overlay-slidedown.close {
+	.profile {
+		transform: translateY(10%) rotateX(-15deg);
+	}
+}

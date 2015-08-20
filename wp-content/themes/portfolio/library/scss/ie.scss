@@ -20,9 +20,9 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 ******************************************************************/
 
-@import "partials/variables"; // import variables
-@import "partials/mixins"; // import mixins
-@import "partials/ie_grid"; // import grid
+// @import "partials/variables"; // import variables
+@import "variables/mixins"; // import mixins
+@import "variables/ie_grid"; // import grid
 
 // import everything inside media queries
 @import "breakpoints/481up";
