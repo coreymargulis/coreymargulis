@@ -1,7 +1,5 @@
 #content {
-
 	z-index: 2;
-
 	position: relative;
 	/*-webkit-animation: fade-in .8s ease;
 	animation: fade-in .8s ease;*/
@@ -102,10 +100,7 @@
 			#next-project {
 				margin-bottom: 20px;
 			}
-
 		}
-
-
 	} /* end .hentry */
 
 	/* post meta */
@@ -246,25 +241,6 @@
 			height: auto;
 		}
 
-		/*
-		image alignment on a screen this size may be
-		a bit difficult. It's set to start aligning
-		and floating images at the next breakpoint,
-		but it's up to you. Feel free to change it up.
-		*/
-		.alignleft, img.alignleft {}
-		.alignright, img.alignright {}
-		.aligncenter, img.aligncenter {}
-
-		.size-auto,
-		.size-full,
-		.size-large,
-		.size-medium,
-		.size-thumbnail {
-			max-width: 100%;
-			height: auto;
-		}
-
 		pre {
 			background: $black;
 			color: $light-gray;
@@ -277,99 +253,10 @@
 		.flex-container {
 			max-width:740px;
 			margin:0 auto;
-
-			ul, ol {
-
-			}
 		}
 
 	} /* end .entry-content */
 
-	/* image gallery styles */
-	.gallery {
-
-		dl {
-
-			a {}
-
-			img {}
-
-		}
-
-		dt {}
-
-		dd {}
-
-	} /* end .gallery */
-
-	/* gallery caption styles */
-	.gallery-caption {}
-
-	.size-full {}
-	.size-large {}
-	.size-medium {}
-	.size-thumbnail {}
-
-	// the tag output
-	.tags {
-		margin: 0;
-	}
-
-	/******************************************************************
-	PAGE NAVI STYLES
-	******************************************************************/
-
-	.pagination,
-	.wp-prev-next {
-		margin: 1.5em 0;
-	}
-	.pagination{
-		text-align: center;
-
-		ul {
-			display: inline-block;
-			background-color: $white;
-			white-space: nowrap;
-			padding: 0;
-			clear: both;
-			border-radius: 3px;
-		}
-
-		li {
-			padding: 0;
-			margin: 0;
-			float: left;
-			display: inline;
-			overflow: hidden;
-			border-right: 1px solid $gray;
-		}
-
-		a, span {
-			margin: 0;
-			text-decoration: none;
-			padding: 0;
-			line-height: 1em;
-			font-size: 1em;
-			font-weight: normal;
-			padding: 0.75em;
-			min-width: 1em;
-			display: block;
-			color: $blue;
-
-			&:hover, &:focus {
-			}
-		}
-
-		.current{
-			cursor: default;
-			color: $text-color;
-
-			&:hover, &:focus {
-				background-color: $white;
-				color: $text-color;
-			}
-		}
-	} /* end .bones_page_navi */
 }
 
 .drop-shadow-slider {

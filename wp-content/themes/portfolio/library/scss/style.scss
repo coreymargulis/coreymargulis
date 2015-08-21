@@ -17,7 +17,6 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 // @import "susy";
 @import "vendors/breakpoint";
 
-
 @import "variables/_breakpoints";
 @import "variables/_normalize";
 @import "variables/_colors";
@@ -26,20 +25,14 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 @import "variables/_mixins";
 @import "variables/_grid";
 
+// @import "base/_typography";
 
-@import "base/**/*";
-@import "components/**/*";
-@import "layout/**/*";
 
-/*********************
-BASE (MOBILE) SIZE
-This are the mobile styles. It's what people see on their phones. If
-you set a great foundation, you won't need to add too many styles in
-the other stylesheets. Remember, keep it light: Speed is Important.
-*********************/
+@import "base/*";
+@import "components/*";
+@import "layout/*";
 
-// styles in base.scss
-@import "breakpoints/base";
+@import "layout/_header";
 
 /*********************
 LARGER MOBILE DEVICES
@@ -115,6 +108,6 @@ be set to display none.
 @media print {
 
 	// styles in print.scss
-	@import "variables/print";
+	@import "variables/_print";
 
 }

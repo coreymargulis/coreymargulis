@@ -12,10 +12,6 @@
  * not required. It's your world baby, you can do whatever you want.
 */
 
-
-
-
-
 /*
  * Get Viewport Dimensions
  * returns object with viewport dimensions to match css in width and height properties

@@ -9,11 +9,12 @@
 <div class="menu-wrap">
 	<nav>
 		<ul>
-			<li><a id="" href="">saic.edu</a></li>
+			<li><a id="saic" href="">saic.edu</a></li>
+			<li><a id="150" href="campus-signage">150 Years</a></li>
 			<li><a id="campus-signage" href="campus-signage">Campus Signage</a></li>
 			<li><a id="pool-party" href="pool-party">Pool Party</a></li>
-			<li><a id="" href="">Nichols Tower</a></li>
 			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
+			<li><a id="nichols-tower" href="">Nichols Tower</a></li>
 			<li><a id="commencement" href="commencement">Commencement</a></li>
 			<li><a id="whats-fresh" href="whats-fresh">What’s Fresh</a></li>
  		</ul>
@@ -21,7 +22,7 @@
 	<div id="background"></div>
 
 		<script type="text/javascript">
-            $(document).ready(function() {
+          $(document).ready(function() {
 			    $("#whats-fresh").hover(function() {
 			        $('body').css('background-color', '<?php the_field('title-color', 54); ?>');
 			          //$("#background").css('visibility', 'visible');
