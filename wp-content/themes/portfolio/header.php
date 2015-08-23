@@ -29,11 +29,11 @@
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		
+
 		<link rel='stylesheet' type='text/css' href='../style.php' />
-		
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		
+
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
@@ -44,10 +44,10 @@
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
+
 		  ga('create', 'UA-17480393-1', 'auto');
 		  ga('send', 'pageview');
-		
+
 		</script>
 		<?php // end analytics ?>
 
@@ -57,4 +57,5 @@
 
 		<header class="logo">
 				<a id="logo" href="/">Corey Margulis</a>
+				<i class="ion-ios-cart-outline"></i>
 		</header>

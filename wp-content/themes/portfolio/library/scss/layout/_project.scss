@@ -54,6 +54,7 @@
 		}
 
 		#next-project {
+			font-family: $sans-regular;
 			margin-bottom: 20px;
 		}
 		h3 {
@@ -61,66 +62,59 @@
 		}
 	}
 
-	.hentry {
-		header {
-			margin: 1.5em auto 1.5em;
-			padding: 0 1.5em 0 1.5em;
-		}
-
-		footer {
-			padding: 6em 3em;
-			color: $white;
-			position: relative;
-
-			&:before, &:after {
-				content: "";
-				position: absolute;
-				/* background: white; */  /* Match the background */
-				top: 0;
-				bottom: 0;
-				width: 9999px;   /* some huge width */
-				display: block;
-			}
-			&:before {
-				right: 100%;
-			}
-			&:after {
-				left: 100%;
-			}
-
-			p {
-				margin: 0;
-
-			}
-
-			h3 {
-				margin: 0;
-			}
-
-			#next-project {
-				margin-bottom: 20px;
-			}
-		}
-	} /* end .hentry */
-
-	/* post meta */
-	.byline {
-		color: $meta-gray;
-		font-style: italic;
-		margin: 0;
-	}
+	// .hentry {
+	// 	header {
+	// 		margin: 1.5em auto 1.5em;
+	// 		// padding: 0 1.5em 0 1.5em;
+	// 	}
+	//
+	// 	footer {
+	// 		padding: 6em 3em;
+	// 		color: $white;
+	// 		position: relative;
+	//
+	// 		&:before, &:after {
+	// 			content: "";
+	// 			position: absolute;
+	// 			/* background: white; */  /* Match the background */
+	// 			top: 0;
+	// 			bottom: 0;
+	// 			width: 9999px;   /* some huge width */
+	// 			display: block;
+	// 		}
+	// 		&:before {
+	// 			right: 100%;
+	// 		}
+	// 		&:after {
+	// 			left: 100%;
+	// 		}
+	//
+	// 		p {
+	// 			margin: 0;
+	//
+	// 		}
+	//
+	// 		h3 {
+	// 			margin: 0;
+	// 		}
+	//
+	// 		#next-project {
+	// 			margin-bottom: 20px;
+	// 		}
+	// 	}
+	// } /* end .hentry */
 
 	/* entry content */
 	.entry-content {
 		margin: 1.5em auto 3em;
-		padding: 0 1.5em 0 1.5em;
+		padding: 0;
 
 		p, h3 {
 			max-width: 740px;
 		}
 		p {
 			margin: 0 auto;
-			padding-bottom: 1.5em;
+			margin-bottom: 1.5em;
 		}
 		h3 {
 			margin: 1.75em auto 0.75em;
@@ -132,12 +126,6 @@
 				list-style-type: none;
 				padding-bottom: 0;
 				max-width: 100%;
-			}
-			.caption {
-				font-size: .75em;
-				color: lighten($text-color, 40%);
-				max-width: 740px;
-				margin: 0 auto;
 			}
 
 			/* video */
@@ -180,7 +168,7 @@
 			caption {
 				margin: 0 0 7px;
 				font-size: 0.75em;
-				color: $meta-gray;
+				color: $color-text-light;
 				text-transform: uppercase;
 				letter-spacing: 1px;
 			}
@@ -216,9 +204,8 @@
 		blockquote {
 			margin: 0 0 1.5em 0.75em;
 			padding: 0 0 0 0.75em;
-			border-left: 3px solid $blue;
 			font-style: italic;
-			color: $meta-gray;
+			color: $color-text-light;
 
 			&:before {}
 

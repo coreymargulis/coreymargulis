@@ -1,5 +1,5 @@
-$sans-serif:       "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+$sans-regular:     "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-light:       "Minotaur Sans Light", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:            "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif-bold:       "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -27,6 +27,14 @@ $serif-bold:       "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-ser
     font-family: 'Minotaur Bold';
     src: url('../fonts/minotaurweb-bold.eot');
     src: url('../fonts/minotaurweb-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minotaur Sans Light';
+    src: url('../fonts/minotaursansweb-light.eot');
+    src: url('../fonts/minotaursansweb-light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

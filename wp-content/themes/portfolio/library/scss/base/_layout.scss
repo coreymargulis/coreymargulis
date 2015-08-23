@@ -1,6 +1,17 @@
 .wrap {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
+	padding: 0px 20px;
+
+	@include breakpoint($bp-medium) {
+		max-width: 740px;
+	}
+	@include breakpoint($bp-large) {
+		max-width: 900px;
+	}
+	@include breakpoint($bp-x_large) {
+		max-width: 1040px;
+	}
 }
 
 .menu-wrap {
@@ -13,7 +24,7 @@
   background: $process;
   padding-top: 3em !important;
   padding-bottom: 3em !important;
-  color: $white !important;
+  color: #fff !important;
 
 	&:before, &:after {
 	   content: "";
