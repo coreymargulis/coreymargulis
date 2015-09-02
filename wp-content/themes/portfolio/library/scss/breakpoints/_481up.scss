@@ -47,18 +47,18 @@ h2 {
 NAVIGATION STYLES
 *********************/
 
-nav {
-	li {
-		line-height: 1.45;
-		a {
-			font-size: 48px;
-
-			@media screen and ( max-height: 700px ){
-				font-size: 32px;
-			}
-		}
-	}
-}
+// nav {
+// 	li {
+// 		line-height: 1.45;
+// 		a {
+// 			font-size: 48px;
+//
+// 			@media screen and ( max-height: 700px ){
+// 				font-size: 32px;
+// 			}
+// 		}
+// 	}
+// }
 
 	/* .menu is clearfixed inside mixins.scss */
 	.menu {

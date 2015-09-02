@@ -13,8 +13,8 @@
 			<li><a id="150" href="campus-signage">150 Years</a></li>
 			<li><a id="campus-signage" href="campus-signage">Campus Signage</a></li>
 			<li><a id="pool-party" href="pool-party">Pool Party</a></li>
-			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
 			<li><a id="nichols-tower" href="">Nichols Tower</a></li>
+			<li><a id="pastel-artist" href="pastel-artist">Pastel Artist</a></li>
 			<li><a id="commencement" href="commencement">Commencement</a></li>
 			<li><a id="whats-fresh" href="whats-fresh">What’s Fresh</a></li>
  		</ul>

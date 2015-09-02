@@ -35,11 +35,18 @@ nav {
 		margin: 0 auto;
 
 		a {
-			font-family: $serif;
+			font-family: $serif-bold;
 			font-size: 32px;
 			text-rendering: optimizelegibility;
 			display: block;
 
+			@include breakpoint($bp-medium) {
+				font-size: 48px;
+				line-height: 1.5em;
+			}
+			@include breakpoint($bp-large) {
+				font-size: 56px;
+			}
 		}
 
 		&:first-child {}

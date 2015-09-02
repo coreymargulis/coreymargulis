@@ -993,10 +993,17 @@ nav {
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
     nav li a {
-      font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 32px;
       text-rendering: optimizelegibility;
       display: block; }
+      @media (min-width: 768px) {
+        nav li a {
+          font-size: 48px;
+          line-height: 1.5em; } }
+      @media (min-width: 1030px) {
+        nav li a {
+          font-size: 56px; } }
     nav li ul.sub-menu li a,
     nav li ul.children li a {
       padding-left: 30px; }
@@ -1347,15 +1354,6 @@ tweeners.
   /*********************
   NAVIGATION STYLES
   *********************/
-  nav li {
-    line-height: 1.45; }
-    nav li a {
-      font-size: 48px; } }
-    @media only screen and (min-width: 481px) and (max-height: 700px) {
-      nav li a {
-        font-size: 32px; } }
-
-@media only screen and (min-width: 481px) {
   /* .menu is clearfixed inside mixins.scss */
   .menu {
     /* end .menu ul */ }
@@ -1445,58 +1443,6 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  nav {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-    nav li {
-      width: auto;
-      line-height: 1.25;
-      /*
-      plan your menus and drop-downs wisely.
-      */
-      /* showing sub-menus */ }
-      nav li a {
-        font-size: 64px;
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
-      nav li ul.sub-menu,
-      nav li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
-        position: absolute;
-        visibility: hidden;
-        z-index: 8999;
-        /* highlight sub-menu current page */ }
-        nav li ul.sub-menu li,
-        nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
-          nav li ul.sub-menu li a,
-          nav li ul.children li a {
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          nav li ul.sub-menu li:last-child a,
-          nav li ul.children li:last-child a {
-            border-bottom: 0; }
-          nav li ul.sub-menu li ul,
-          nav li ul.children li ul {
-            top: 0;
-            left: 100%; }
-      nav li:hover > ul {
-        top: auto;
-        visibility: visible; }
-
-  /* end .nav */
   /*********************
   SIDEBARS & ASIDES
   *********************/
