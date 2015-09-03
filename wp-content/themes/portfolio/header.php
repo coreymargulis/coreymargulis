@@ -55,7 +55,7 @@
 
 	<body <?php body_class(); ?>>
 
-		<header class="logo">
+		<header class="menu">
 				<a id="logo" href="/">Corey Margulis</a>
-				<i class="ion-ios-cart-outline"></i>
+				<div class="link">Contact</div>
 		</header>

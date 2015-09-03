@@ -1122,22 +1122,25 @@ nav {
 .logo-container--unpinned {
   display: none; }
 
-.logo {
-  position: absolute;
+.menu {
+  position: fixed;
   top: 15px;
-  width: 100%;
-  padding-top: 0px;
-  /*		background-color: rgba(248,249,250,0);
-  */
-  z-index: 1000;
-  overflow: hidden;
-  /*height: 50px;*/ }
+  z-index: 1000; }
 
 #logo {
-  width: 210px;
-  padding: 20px 35px;
+  position: fixed;
   display: block;
-  text-align: center;
+  padding: 20px 35px;
+  left: 0;
+  font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .85em; }
+
+.link {
+  position: fixed;
+  display: block;
+  padding: 20px 35px;
+  top: 15px;
+  right: 0;
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .85em; }
 
@@ -1177,6 +1180,12 @@ nav {
     @media screen and (max-height: 700px) {
       #content .hero-image-container {
         height: 300px; } }
+  #content .hentry header {
+    max-width: 740px;
+    margin: 1.5em auto 0; }
+    @media (min-width: 768px) {
+      #content .hentry header {
+        margin: 3em auto 0; } }
   #content .next-project {
     text-align: center;
     color: #fff;
@@ -1293,22 +1302,25 @@ nav {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 5px !important; }
 
-.logo {
-  position: absolute;
+.menu {
+  position: fixed;
   top: 15px;
-  width: 100%;
-  padding-top: 0px;
-  /*		background-color: rgba(248,249,250,0);
-  */
-  z-index: 1000;
-  overflow: hidden;
-  /*height: 50px;*/ }
+  z-index: 1000; }
 
 #logo {
-  width: 210px;
-  padding: 20px 35px;
+  position: fixed;
   display: block;
-  text-align: center;
+  padding: 20px 35px;
+  left: 0;
+  font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .85em; }
+
+.link {
+  position: fixed;
+  display: block;
+  padding: 20px 35px;
+  top: 15px;
+  right: 0;
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .85em; }
 
@@ -1423,11 +1435,6 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
-  .hentry header {
-    max-width: 740px;
-    margin-top: 3em;
-    padding: 0; }
-
   /*********************
   POSTS & CONTENT STYLES
   *********************/

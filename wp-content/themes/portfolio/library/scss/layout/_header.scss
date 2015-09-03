@@ -1,20 +1,24 @@
-.logo {
-		position: absolute;
+.menu {
+		position: fixed;
 		top: 15px;
-		width: 100%;
-		padding-top: 0px;
-/*		background-color: rgba(248,249,250,0);
-*/		z-index: 1000;
-		overflow: hidden;
-
-		/*height: 50px;*/
-}
+		z-index: 1000;
+	}
 
 #logo {
-	width: 210px;
-	padding: 20px 35px;
+	position: fixed;
 	display: block;
-	text-align: center;
+	padding: 20px 35px;
+	left: 0;
+	font-family: $sans-regular;
+	font-size: .85em;
+}
+
+.link {
+	position: fixed;
+	display: block;
+	padding: 20px 35px;
+	top: 15px;
+	right: 0;
 	font-family: $sans-regular;
 	font-size: .85em;
 }

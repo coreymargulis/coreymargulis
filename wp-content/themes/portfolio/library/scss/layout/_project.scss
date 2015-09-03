@@ -41,6 +41,15 @@
 
 	}
 
+	.hentry header {
+		max-width: 740px;
+		margin: 1.5em auto 0;
+		
+		@include breakpoint($bp-medium) {
+			margin: 3em auto 0;
+		}
+	}
+
 	.next-project {
 		text-align: center;
 		color: $white;
