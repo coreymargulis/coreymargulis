@@ -57,5 +57,5 @@
 
 		<header class="menu">
 				<a id="logo" href="/">Corey Margulis</a>
-				<div class="link">Contact</div>
+				<!-- <div class="link">Contact</div> -->
 		</header>

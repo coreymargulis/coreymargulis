@@ -1,16 +1,14 @@
 $color-text:        #4a4a4a;
 $color-text-light:  transparentize(#4a4a4a, .5);
 $color-background:  #f8f9fa;
+$color-border:      #ECECEC;
+
 
 $black:             #000;
-$gray:              #3b3b3b;
 $light-gray:        #f8f9fa;
 $white:             #fff;
 
 $process:			      #474647;
 
-$link-color:        $gray;
+$link-color:        #3b3b3b;
 $link-hover:        darken($link-color, 9%);
-
-$border-color:      #ccc;
-$disabled-gray:     #cfcfcf;

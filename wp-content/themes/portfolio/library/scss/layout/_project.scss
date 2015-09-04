@@ -44,7 +44,7 @@
 	.hentry header {
 		max-width: 740px;
 		margin: 1.5em auto 0;
-		
+
 		@include breakpoint($bp-medium) {
 			margin: 3em auto 0;
 		}
@@ -169,46 +169,7 @@
 			list-style-type: disc;
 		}
 
-		table {
-			width: 100%;
-			border: 1px solid $gray;
-			margin-bottom: 1.5em;
 
-			caption {
-				margin: 0 0 7px;
-				font-size: 0.75em;
-				color: $color-text-light;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-			}
-		}
-
-		tr {
-			border-bottom: 1px solid $gray;
-
-			&:nth-child(even) {
-				background-color: $light-gray;
-			}
-		}
-
-		td {
-			padding: 7px;
-			border-right: 1px solid $gray;
-
-			&:last-child {
-				border-right: 0;
-			}
-		}
-
-		th {
-			background-color: $light-gray;
-			border-bottom: 1px solid $gray;
-			border-right: 1px solid $gray;
-
-			&:last-child {
-				border-right: 0;
-			}
-		}
 
 		blockquote {
 			margin: 0 0 1.5em 0.75em;
@@ -237,14 +198,14 @@
 			height: auto;
 		}
 
-		pre {
-			background: $black;
-			color: $light-gray;
-			font-size: 0.9em;
-			padding: 1.5em;
-			margin: 0 0 1.5em;
-			border-radius: 3px;
-		}
+		// pre {
+		// 	background: $black;
+		// 	color: $light-gray;
+		// 	font-size: 0.9em;
+		// 	padding: 1.5em;
+		// 	margin: 0 0 1.5em;
+		// 	border-radius: 3px;
+		// }
 
 		.flex-container {
 			max-width:740px;

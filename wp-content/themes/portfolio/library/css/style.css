@@ -953,62 +953,6 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-#background {
-  visibility: hidden;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  z-index: -1000;
-  /* background-image: url('https://dl.dropboxusercontent.com/u/13041969/strawberries.png'); */
-  opacity: .25; }
-
-nav {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  display: table;
-  z-index: -100;
-  /*-webkit-animation: fade-in .8s ease;
-  animation: fade-in .8s ease;*/
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */ }
-  nav ul {
-    width: 100%;
-    padding: 0;
-    display: table-cell;
-    vertical-align: middle;
-    transition: 1s; }
-  nav li {
-    text-align: center;
-    line-height: 1.45;
-    margin: 0 auto;
-    /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */ }
-    nav li a {
-      font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 32px;
-      text-rendering: optimizelegibility;
-      display: block; }
-      @media (min-width: 768px) {
-        nav li a {
-          font-size: 48px;
-          line-height: 1.5em; } }
-      @media (min-width: 1030px) {
-        nav li a {
-          font-size: 56px; } }
-    nav li ul.sub-menu li a,
-    nav li ul.children li a {
-      padding-left: 30px; }
-
-/* end nav */
 .profile-link-wrapper {
   position: fixed;
   bottom: 15px;
@@ -1024,8 +968,7 @@ nav {
     position: relative;
     margin: 0 auto;
     text-align: center;
-    font-size: .9em;
-    color: #3b3b3b; }
+    font-size: .9em; }
 
 .overlay {
   position: fixed;
@@ -1144,6 +1087,73 @@ nav {
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .85em; }
 
+.intro {
+  width: 100%;
+  padding: 35px;
+  margin-top: 80px;
+  margin-bottom: 2em;
+  position: fixed;
+  z-index: 0; }
+  @media (min-width: 768px) {
+    .intro {
+      max-width: 770px; } }
+  .intro h1 {
+    font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    margin-bottom: .25em; }
+  .intro h2 {
+    font-size: 16px; }
+
+.menu-wrap {
+  width: 100%;
+  position: relative;
+  z-index: 1001;
+  margin-top: 380px;
+  background: #fefefe; }
+
+nav {
+  /* end .menu li */ }
+  nav ul {
+    width: 100%;
+    padding: 0; }
+  nav li {
+    text-align: left;
+    line-height: 1.45;
+    border-bottom: 1px solid #ECECEC; }
+    nav li a {
+      display: block;
+      padding: 35px;
+      padding-bottom: 38px;
+      transition: all .6s ease-out;
+      -webkit-transition: all .6s ease-out; }
+      nav li a:hover {
+        background: #fff; }
+    nav li .project-title {
+      font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-rendering: optimizelegibility;
+      font-size: 32px;
+      display: block; }
+      @media (min-width: 768px) {
+        nav li .project-title {
+          font-size: 32px;
+          line-height: 1.5em; } }
+      @media (min-width: 1030px) {
+        nav li .project-title {
+          font-size: 32px; } }
+    nav li .project-tagline {
+      font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px; }
+
+/* end nav */
+#background {
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1000;
+  opacity: .25; }
+
 #content {
   z-index: 2;
   position: relative;
@@ -1238,31 +1248,6 @@ nav {
       max-width: 740px; }
     #content .entry-content ul {
       list-style-type: disc; }
-    #content .entry-content table {
-      width: 100%;
-      border: 1px solid #3b3b3b;
-      margin-bottom: 1.5em; }
-      #content .entry-content table caption {
-        margin: 0 0 7px;
-        font-size: 0.75em;
-        color: rgba(74, 74, 74, 0.5);
-        text-transform: uppercase;
-        letter-spacing: 1px; }
-    #content .entry-content tr {
-      border-bottom: 1px solid #3b3b3b; }
-      #content .entry-content tr:nth-child(even) {
-        background-color: #f8f9fa; }
-    #content .entry-content td {
-      padding: 7px;
-      border-right: 1px solid #3b3b3b; }
-      #content .entry-content td:last-child {
-        border-right: 0; }
-    #content .entry-content th {
-      background-color: #f8f9fa;
-      border-bottom: 1px solid #3b3b3b;
-      border-right: 1px solid #3b3b3b; }
-      #content .entry-content th:last-child {
-        border-right: 0; }
     #content .entry-content blockquote {
       margin: 0 0 1.5em 0.75em;
       padding: 0 0 0 0.75em;
@@ -1277,13 +1262,6 @@ nav {
       margin: 0;
       max-width: 100%;
       height: auto; }
-    #content .entry-content pre {
-      background: #000;
-      color: #f8f9fa;
-      font-size: 0.9em;
-      padding: 1.5em;
-      margin: 0 0 1.5em;
-      border-radius: 3px; }
     #content .entry-content .flex-container {
       max-width: 740px;
       margin: 0 auto; }

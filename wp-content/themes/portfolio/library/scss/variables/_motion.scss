@@ -5,10 +5,10 @@
 
 	z-index: 1;
 	-webkit-animation: fade-in 1s ease-in reverse;
-    -webkit-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 
-    animation: fade-in 1s ease-in reverse;
-    animation-fill-mode: forwards;
+  animation: fade-in 1s ease-in reverse;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade-in {
