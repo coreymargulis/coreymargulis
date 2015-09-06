@@ -52,17 +52,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-family: $serif-bold;
-	font-size: 1.85em;
+	font-family: $sans-regular;
+	font-size: 30px;
 	line-height: 1.45em;
-	margin: 0;
 }
 
 h2, .h2 {
 	font-family: $serif;
-	font-size: 1.85em;
-	line-height: 1.45em;
-	margin: 0;
+	font-size: 24px;
+	line-height: 1.6em;
 
   @include breakpoint($bp-medium) {
     // font-size: 2.35em;
@@ -71,24 +69,18 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-family: $serif-bold;
-	font-size: 1.25em;
+	font-family: $sans-light;
+	font-size: 20px;
 }
 
-h4, .h4 {
-	font-size: 1.1em;
-	font-weight: 700;
-}
-
-h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+h3.project {
+	font-family: $sans-regular;
+	font-size: 22px;
 }
 
 p {
-  font-size: .9em;
+  // font-size: .9em;
+	font-size: 16px;
 	line-height: 1.85em;
 	-webkit-font-smoothing: auto;
 
@@ -118,6 +110,5 @@ p {
 	font-family: $sans-light;
 	-webkit-font-smoothing: antialiased !important;
 	color: $color-text-light;
-	max-width: 740px;
-	margin: 0 auto;
+	text-align: left !important;
 }

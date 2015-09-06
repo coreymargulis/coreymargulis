@@ -60,21 +60,63 @@
 
 							        elseif( get_row_layout() == 'section-title' ): ?>
 
-							        	<h3><?php the_sub_field('section-title'); ?></h3>
+												<?php if( get_sub_field('project-section-title') ) : ?>
+							        		<h3 class="project"><?php the_sub_field('section-title'); ?></h3>
+												<?php else: ?>
+													<h3><?php the_sub_field('section-title'); ?></h3>
+												<?php endif; ?>
 
 							        <?php elseif( get_row_layout() == 'image' ): ?>
 
-										<div class="media">
-											<img src="<?php the_sub_field("image"); ?>" alt="" class="<?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>"/>
-											<div class="caption"><?php the_sub_field("image-caption"); ?></div>
-										</div>
+												<?php if(get_sub_field('layout') == "inset-left") : ?>
+													<div class="inset-container">
+														<div class="media inset left">
+															<img src="<?php the_sub_field("image"); ?>" alt="" class="<?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>"/>
+															<div class="caption"><?php the_sub_field("image-caption"); ?></div>
+														</div>
+														<div class="inset-text">
+															<h3><?php the_sub_field('section-title'); ?></h3>
+															<p><?php the_sub_field('inset-text'); ?></p>
+														</div>
+													</div>
 
-									<?php elseif( get_row_layout() == 'video' ): ?>
+												<?php elseif(get_sub_field('layout') == "inset-right") : ?>
+														<div class="inset-container">
+															<div class="media inset right">
+																<img src="<?php the_sub_field("image"); ?>" alt="" class="<?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>"/>
+																<div class="caption"><?php the_sub_field("image-caption"); ?></div>
+															</div>
+															<div class="inset-text">
+																<h3><?php the_sub_field('section-title'); ?></h3>
+																<p><?php the_sub_field('inset-text'); ?></p>
+															</div>
+														</div>
+
+												<?php elseif(get_sub_field('layout') == "inset-center") : ?>
+													<div class="media inset-center<?php if( get_sub_field('bkgd-color-change')){ ?> alt<?php } ?>">
+														<img src="<?php the_sub_field("image"); ?>" alt="" class="<?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>"/>
+														<div class="caption"><?php the_sub_field("image-caption"); ?></div>
+													</div>
+
+												<?php elseif(get_sub_field('layout') == "outset") : ?>
+													<div class="media outset<?php if( get_sub_field('bkgd-color-change')){ ?> alt<?php } ?>">
+														<img src="<?php the_sub_field("image"); ?>" alt="" class="<?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>"/>
+														<div class="caption"><?php the_sub_field("image-caption"); ?></div>
+													</div>
+
+												<?php elseif(get_sub_field('layout') == "fill-width") : ?>
+													<div class="media fill-width" style="background-image: url(<?php the_sub_field("image"); ?>)";>
+														<div class="caption"><?php the_sub_field("image-caption"); ?></div>
+													</div>
+
+												<?php endif; ?>
+
+											<?php elseif( get_row_layout() == 'video' ): ?>
 
 							        	<div class="media">
 
-											<div class="embed-container" style="padding-bottom:<?php the_sub_field('padding'); ?>%;">
-												<?php
+													<div class="embed-container" style="padding-bottom:<?php the_sub_field('padding'); ?>%;">
+													<?php
 
 												// get iframe HTML
 												$iframe = get_sub_field('video');
@@ -212,19 +254,19 @@
 		?>
 
 		<a href="<?php the_permalink(); ?>">
+			<?php $bg = get_field( 'hero-image' ); ?>
 			<section class="next-project" style="background-color:<?php the_field('title-color'); ?>; opacity: .85;">
-				    	<div id="next-project">Next Project</div>
-				    	<h3><?php the_title(); ?></h3>
-				    	<?php the_field('tagline'); ?>
+	    	<div id="next-project">Next Project</div>
+	    	<h3><?php the_title(); ?></h3>
+	    	<?php the_field('tagline'); ?>
+      </section> <?php // end next project section ?>
+    </a>
 
-            </section> <?php // end next project section ?>
-        </a>
-
-        <a href="/">
+        <!-- <a href="/">
         	<section class="logo-footer" style="background-color:<?php the_field('title-color'); ?>; opacity: 1;">
         		<div id="logo-footer" href="/">All Projects</div>
         	</section>
-        </a>
+        </a> -->
 
         <?php wp_reset_postdata();  ?>
 		<?php endif; ?>

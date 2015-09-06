@@ -8,14 +8,14 @@
 
 <div class="intro">
 	<h1>Hello, I am a designer for the School of the Art Institute of Chicago’s Marketing & Communication department.</h1>
-	<h2>I am interested in humanizing technology.</h2>
+	<h2>I am currently accepting project requests: <a href="">coreymargulis@gmail.com</a></h2>
 </div>
 
 <div class="menu-wrap">
 	<nav>
 		<ul>
 				<li>
-					<a id="saic" href="">
+					<a id="saic" href="saic-edu">
 						<div class="project-title">saic.edu</div>
 						<div class="project-tagline">Making the site responsive and improving the user experience for department pages</div>
 					</a>
@@ -64,6 +64,10 @@
 			</li>
  		</ul>
 	</nav>
+
+<footer class="footer">
+	© <?php echo date('Y'); ?> Corey Margulis
+</footer>
 
 	<div id="background"></div>
 

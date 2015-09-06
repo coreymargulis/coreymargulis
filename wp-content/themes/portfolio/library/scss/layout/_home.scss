@@ -1,21 +1,40 @@
 .intro {
   width: 100%;
   padding: 35px;
-  margin-top: 80px;
+  padding-top: 90px;
   margin-bottom: 2em;
   position: fixed;
   z-index: 0;
 
   @include breakpoint($bp-medium) {
-    max-width: 770px;
+    max-width: 100%;
   }
+
   h1 {
     font-family: $serif;
-    font-size: 36px;
+    font-size: 20px;
     margin-bottom: .25em;
+    padding: 0;
+    max-width: 100%;
+
+    @include breakpoint($bp-small) {
+      font-size: 28px;
+    }
+    @include breakpoint($bp-medium) {
+      font-size: 40px;
+    }
+    @include breakpoint($bp-large) {
+      font-size: 60px;
+    }
   }
   h2 {
     font-size: 16px;
+    -webkit-font-smoothing: auto;
+    padding: 0;
+    max-width: 100%;
+    a {
+      border-bottom: 1px solid transparentize($link-color, .7);
+    }
   }
 }
 
@@ -23,8 +42,12 @@
   width: 100%;
   position: relative;
   z-index: 1001;
-  margin-top: 380px;
   background: lighten($color-background, 2%);
+
+  margin-top: 380px;
+  @include breakpoint($bp-medium) {
+    margin-top: 520px;
+  }
 }
 
 nav {
@@ -49,7 +72,13 @@ nav {
 	li {
     text-align: left;
 		line-height: 1.45;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid $color-text;
+    text-rendering: optimizelegibility;
+  	-webkit-font-smoothing: auto;
+
+    &:first-child {
+      border-top: 1px solid $color-text;
+    }
 
     a {
       display: block;
@@ -66,16 +95,14 @@ nav {
 
 		.project-title {
       font-family: $serif-bold;
-  		text-rendering: optimizelegibility;
-      font-size: 32px;
+      font-size: 20px;
 			display: block;
 
 			@include breakpoint($bp-medium) {
-				font-size: 32px;
+				font-size: 28px;
 				line-height: 1.5em;
 			}
 			@include breakpoint($bp-large) {
-				font-size: 32px;
 			}
 		}
 
@@ -96,4 +123,11 @@ nav {
 	top: 0px;
 	z-index: -1000;
 	opacity: .25;
+}
+
+.footer {
+  font-family: $sans-light;
+  font-size: 12px;
+  padding: 35px;
+  padding-top: 50px;
 }

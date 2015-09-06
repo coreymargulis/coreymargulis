@@ -799,39 +799,106 @@ html, body {
   overflow-x: hidden; }
 
 body {
-  color: #4a4a4a;
-  background-color: #f8f9fa;
+  color: #3b3b3b;
+  background-color: #E9E9E9;
   overflow-x: hidden;
   transition: 1s; }
 
 .wrap {
   width: 100%;
-  margin: 0 auto;
-  padding: 0px 20px; }
+  padding: 0px 20px;
+  position: relative;
+  background-color: #E9E9E9;
+  z-index: 9999; }
   @media (min-width: 768px) {
     .wrap {
-      max-width: 740px; } }
-  @media (min-width: 1030px) {
-    .wrap {
-      max-width: 900px; } }
-  @media (min-width: 1400px) {
-    .wrap {
-      max-width: 1040px; } }
+      padding: 0; } }
 
-.menu-wrap {
+h1, h2, h3, h4, p, .inset-container {
   width: 100%;
-  height: 100%; }
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    h1, h2, h3, h4, p, .inset-container {
+      max-width: 730px; } }
+
+@media (min-width: 768px) {
+  .inset-container {
+    display: table; }
+    .inset-container .inset-text {
+      width: 50%;
+      float: left; } }
+
+.media {
+  max-width: 100%;
+  margin: 2em auto 3.5em auto;
+  text-align: center;
+  /* video */ }
+  @media (min-width: 768px) {
+    .media.inset {
+      width: 50%;
+      margin-top: 0; }
+      .media.inset.left {
+        float: left;
+        text-align: left; }
+      .media.inset.right {
+        float: right;
+        text-align: right; } }
+  .media.inset-center {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .media.inset-center {
+        max-width: 730px; } }
+    .media.inset-center .caption {
+      max-width: 730px;
+      margin: 0 auto; }
+  .media.outset {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .media.outset {
+        max-width: 730px; } }
+    @media (min-width: 1030px) {
+      .media.outset {
+        width: 1030px;
+        max-width: 1030px; } }
+    .media.outset .caption {
+      max-width: 730px;
+      margin: 0 auto; }
+  .media.fill-width {
+    width: 100%;
+    height: 700px;
+    margin-top: 0; }
+  .media ul, .media ol {
+    list-style-type: none;
+    padding-bottom: 0;
+    max-width: 100%; }
+  .media .embed-container {
+    position: relative;
+    padding-bottom: 71%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: .5em; }
+  .media .embed-container iframe, .media .embed-container object, .media .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .media .player .title {
+    display: none; }
 
 .alt {
   position: relative;
-  background: #474647;
-  padding-top: 3em !important;
-  padding-bottom: 3em !important;
-  color: #fff !important; }
+  background: #D8D8D8;
+  padding-top: 4em !important;
+  padding-bottom: 4em !important;
+  margin-bottom: 0;
+  margin-top: 0; }
   .alt:before, .alt:after {
     content: "";
     position: absolute;
-    background: #474647;
+    background: #D8D8D8;
     /* Match the background */
     top: 0;
     bottom: 0;
@@ -880,33 +947,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
     text-decoration: none; }
 
 h1, .h1 {
-  font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.85em;
-  line-height: 1.45em;
-  margin: 0; }
+  font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.45em; }
 
 h2, .h2 {
   font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.85em;
-  line-height: 1.45em;
-  margin: 0; }
+  font-size: 24px;
+  line-height: 1.6em; }
 
 h3, .h3 {
-  font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.25em; }
+  font-family: "Minotaur Sans Light", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px; }
 
-h4, .h4 {
-  font-size: 1.1em;
-  font-weight: 700; }
-
-h5, .h5 {
-  font-size: 0.846em;
-  line-height: 2.09em;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
+h3.project {
+  font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px; }
 
 p {
-  font-size: .9em;
+  font-size: 16px;
   line-height: 1.85em;
   -webkit-font-smoothing: auto; }
 
@@ -915,9 +974,8 @@ p {
   line-height: 1.65em;
   font-family: "Minotaur Sans Light", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased !important;
-  color: rgba(74, 74, 74, 0.5);
-  max-width: 740px;
-  margin: 0 auto; }
+  color: rgba(59, 59, 59, 0.25);
+  text-align: left !important; }
 
 /******************************************************************
 Site Name:
@@ -953,6 +1011,35 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
+.hero-image-container {
+  /* height: 70%; */
+  height: 520px; }
+  .hero-image-container .hero-image {
+    position: fixed;
+    height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+  .hero-image-container .hero-image-caption {
+    font-size: .75em;
+    color: #fff;
+    opacity: .5;
+    max-width: 740px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    text-align: right;
+    padding-right: 1.5em; }
+  @media screen and (max-height: 700px) and (min-width: 481px) {
+    .hero-image-container {
+      height: 400px; } }
+  @media screen and (max-height: 700px) {
+    .hero-image-container {
+      height: 300px; } }
+
 .profile-link-wrapper {
   position: fixed;
   bottom: 15px;
@@ -1043,27 +1130,18 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .overlay-slidedown.close .profile {
   transform: translateY(10%) rotateX(-15deg); }
 
-.logo-footer {
-  padding: 1em 0; }
-
-#logo-footer {
-  width: 200px;
-  padding: 20px 35px;
-  display: block;
-  /* position: relative; */
-  margin: 0 auto;
+.next-project {
   text-align: center;
-  font-size: .8em;
-  color: #fff; }
-
-.active {
-  opacity: 1; }
-
-.logo-container--pinned {
-  display: block; }
-
-.logo-container--unpinned {
-  display: none; }
+  color: #fff;
+  padding: 4em 15% 4.25em 15%;
+  transition: all .4s ease-in-out; }
+  .next-project:hover {
+    opacity: .95 !important; }
+  .next-project #next-project {
+    font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 20px; }
+  .next-project h3 {
+    margin: 0px; }
 
 .menu {
   position: fixed;
@@ -1090,26 +1168,45 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .intro {
   width: 100%;
   padding: 35px;
-  margin-top: 80px;
+  padding-top: 90px;
   margin-bottom: 2em;
   position: fixed;
   z-index: 0; }
   @media (min-width: 768px) {
     .intro {
-      max-width: 770px; } }
+      max-width: 100%; } }
   .intro h1 {
     font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 36px;
-    margin-bottom: .25em; }
+    font-size: 20px;
+    margin-bottom: .25em;
+    padding: 0;
+    max-width: 100%; }
+    @media (min-width: 480px) {
+      .intro h1 {
+        font-size: 28px; } }
+    @media (min-width: 768px) {
+      .intro h1 {
+        font-size: 40px; } }
+    @media (min-width: 1030px) {
+      .intro h1 {
+        font-size: 60px; } }
   .intro h2 {
-    font-size: 16px; }
+    font-size: 16px;
+    -webkit-font-smoothing: auto;
+    padding: 0;
+    max-width: 100%; }
+    .intro h2 a {
+      border-bottom: 1px solid rgba(59, 59, 59, 0.3); }
 
 .menu-wrap {
   width: 100%;
   position: relative;
   z-index: 1001;
-  margin-top: 380px;
-  background: #fefefe; }
+  background: #eeeeee;
+  margin-top: 380px; }
+  @media (min-width: 768px) {
+    .menu-wrap {
+      margin-top: 520px; } }
 
 nav {
   /* end .menu li */ }
@@ -1119,7 +1216,11 @@ nav {
   nav li {
     text-align: left;
     line-height: 1.45;
-    border-bottom: 1px solid #ECECEC; }
+    border-bottom: 1px solid #3b3b3b;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: auto; }
+    nav li:first-child {
+      border-top: 1px solid #3b3b3b; }
     nav li a {
       display: block;
       padding: 35px;
@@ -1130,16 +1231,12 @@ nav {
         background: #fff; }
     nav li .project-title {
       font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-rendering: optimizelegibility;
-      font-size: 32px;
+      font-size: 20px;
       display: block; }
       @media (min-width: 768px) {
         nav li .project-title {
-          font-size: 32px;
+          font-size: 28px;
           line-height: 1.5em; } }
-      @media (min-width: 1030px) {
-        nav li .project-title {
-          font-size: 32px; } }
     nav li .project-tagline {
       font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 16px; }
@@ -1154,105 +1251,39 @@ nav {
   z-index: -1000;
   opacity: .25; }
 
+.footer {
+  font-family: "Minotaur Sans Light", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  padding: 35px;
+  padding-top: 50px; }
+
 #content {
   z-index: 2;
   position: relative;
-  /*-webkit-animation: fade-in .8s ease;
-  animation: fade-in .8s ease;*/
   /* entry content */
   /* end .entry-content */ }
-  #content .hero-image-container {
-    /* height: 70%; */
-    height: 520px;
-    /*	-webkit-animation: fade-in .8s ease;
-    animation: fade-in .8s ease;*/ }
-    #content .hero-image-container .hero-image {
-      position: relative;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      overflow: hidden;
-      width: 100%;
-      height: 100%; }
-    #content .hero-image-container .hero-image-caption {
-      font-size: .75em;
-      color: #fff;
-      opacity: .5;
-      max-width: 740px;
-      margin: 0 auto;
-      position: relative;
-      top: -30px;
-      text-align: right;
-      padding-right: 1.5em; }
-    @media screen and (max-height: 700px) and (min-width: 481px) {
-      #content .hero-image-container {
-        height: 400px; } }
-    @media screen and (max-height: 700px) {
-      #content .hero-image-container {
-        height: 300px; } }
   #content .hentry header {
-    max-width: 740px;
     margin: 1.5em auto 0; }
     @media (min-width: 768px) {
       #content .hentry header {
         margin: 3em auto 0; } }
-  #content .next-project {
-    text-align: center;
-    color: #fff;
-    padding: 4em 15% 4.25em 15%;
-    margin-top: 6em;
-    transition: all .4s ease-in-out; }
-    #content .next-project:hover {
-      opacity: .95 !important; }
-    #content .next-project #next-project {
-      font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin-bottom: 20px; }
-    #content .next-project h3 {
-      margin: 0px; }
   #content .entry-content {
     margin: 1.5em auto 3em;
     padding: 0; }
-    #content .entry-content p, #content .entry-content h3 {
-      max-width: 740px; }
     #content .entry-content p {
-      margin: 0 auto;
       margin-bottom: 1.5em; }
     #content .entry-content h3 {
       margin: 1.75em auto 0.75em; }
-    #content .entry-content .media {
-      margin: 1.5em 0 3em 0;
-      /* video */ }
-      #content .entry-content .media ul, #content .entry-content .media ol {
-        list-style-type: none;
-        padding-bottom: 0;
-        max-width: 100%; }
-      #content .entry-content .media .embed-container {
-        position: relative;
-        padding-bottom: 71%;
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: .5em; }
-      #content .entry-content .media .embed-container iframe, #content .entry-content .media .embed-container object, #content .entry-content .media .embed-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%; }
-      #content .entry-content .media .player .title {
-        display: none; }
     #content .entry-content ul, #content .entry-content ol {
       margin: 0 auto;
-      padding-bottom: 1.5em;
-      max-width: 740px; }
+      padding-bottom: 1.5em; }
     #content .entry-content ul {
       list-style-type: disc; }
     #content .entry-content blockquote {
       margin: 0 0 1.5em 0.75em;
       padding: 0 0 0 0.75em;
       font-style: italic;
-      color: rgba(74, 74, 74, 0.5); }
+      color: rgba(59, 59, 59, 0.25); }
     #content .entry-content dd {
       margin-left: 0;
       font-size: 0.9em;
