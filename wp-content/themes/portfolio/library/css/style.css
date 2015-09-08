@@ -821,12 +821,14 @@ h1, h2, h3, h4, p, .inset-container {
     h1, h2, h3, h4, p, .inset-container {
       max-width: 730px; } }
 
-@media (min-width: 768px) {
-  .inset-container {
-    display: table; }
-    .inset-container .inset-text {
-      width: 50%;
-      float: left; } }
+.inset-container {
+  margin: 2em auto 3.5em auto; }
+  @media (min-width: 768px) {
+    .inset-container {
+      display: table; }
+      .inset-container .inset-text {
+        width: 50%;
+        float: left; } }
 
 .media {
   max-width: 100%;
@@ -839,10 +841,12 @@ h1, h2, h3, h4, p, .inset-container {
       margin-top: 0; }
       .media.inset.left {
         float: left;
-        text-align: left; }
+        text-align: left;
+        padding-right: 40px; }
       .media.inset.right {
         float: right;
-        text-align: right; } }
+        text-align: right;
+        padding-left: 40px; } }
   .media.inset-center {
     text-align: center; }
     @media (min-width: 768px) {
@@ -859,7 +863,7 @@ h1, h2, h3, h4, p, .inset-container {
     @media (min-width: 1030px) {
       .media.outset {
         width: 1030px;
-        max-width: 1030px; } }
+        max-width: 80%; } }
     .media.outset .caption {
       max-width: 730px;
       margin: 0 auto; }

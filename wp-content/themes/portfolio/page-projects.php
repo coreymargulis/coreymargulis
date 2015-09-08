@@ -23,7 +23,7 @@
 				<li>
 					<a id="campus-signage" href="campus-signage">
 						<div class="project-title">Campus Signage</div>
-						<div class="project-tagline">A flexible and useful signage system for the School of the Art Institute of Chicago’s campus</div>
+						<div class="project-tagline">A flexible signage system for the School of the Art Institute of Chicago’s campus</div>
 					</a>
 				</li>
 			<li>
@@ -51,15 +51,15 @@
 				</a>
 			</li>
 			<li>
-				<a id="commencement" href="commencement">
-					<div class="project-title">Commencement</div>
-					<div class="project-tagline">A dynamic identity for SAIC’s graduation ceremony</div>
+				<a id="whats-fresh" href="whats-fresh">
+					<div class="project-title">What’s Fresh</div>
+					<div class="project-tagline">Two ways to find out what produce is in season</div>
 				</a>
 			</li>
 			<li>
-				<a id="whats-fresh" href="whats-fresh">
-					<div class="project-title">What’s Fresh</div>
-					<div class="project-tagline">Two ways to find out what produce is fresh in your area</div>
+				<a id="commencement" href="commencement">
+					<div class="project-title">Commencement</div>
+					<div class="project-tagline">A dynamic identity for SAIC’s graduation ceremony</div>
 				</a>
 			</li>
  		</ul>

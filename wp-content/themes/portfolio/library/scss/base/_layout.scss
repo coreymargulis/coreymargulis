@@ -21,6 +21,8 @@ h1, h2, h3, h4, p, .inset-container {
 }
 
 .inset-container {
+	margin: 2em auto 3.5em auto;
+
 	@include breakpoint($bp-medium) {
 		display: table;
 		.inset-text {
@@ -42,10 +44,12 @@ h1, h2, h3, h4, p, .inset-container {
 			&.left {
 				float: left;
 				text-align: left;
+				padding-right: 40px;
 			}
 			&.right {
 				float: right;
 				text-align: right;
+				padding-left: 40px;
 			}
 		}
   }
@@ -70,7 +74,7 @@ h1, h2, h3, h4, p, .inset-container {
   	}
   	@include breakpoint($bp-large) {
   		width: 1030px;
-      max-width: 1030px;
+      max-width: 80%;
   	}
     .caption {
       max-width: 730px;

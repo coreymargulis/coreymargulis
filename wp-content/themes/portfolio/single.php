@@ -75,8 +75,8 @@
 															<div class="caption"><?php the_sub_field("image-caption"); ?></div>
 														</div>
 														<div class="inset-text">
-															<h3><?php the_sub_field('section-title'); ?></h3>
-															<p><?php the_sub_field('inset-text'); ?></p>
+															<?php if(get_sub_field('section-title')): ?><h3><?php the_sub_field('section-title'); ?></h3><?php endif; ?>
+															<?php the_sub_field('inset-text'); ?>
 														</div>
 													</div>
 
@@ -87,8 +87,8 @@
 																<div class="caption"><?php the_sub_field("image-caption"); ?></div>
 															</div>
 															<div class="inset-text">
-																<h3><?php the_sub_field('section-title'); ?></h3>
-																<p><?php the_sub_field('inset-text'); ?></p>
+																<?php if(get_sub_field('section-title')): ?><h3><?php the_sub_field('section-title'); ?></h3><?php endif; ?>
+																<?php the_sub_field('inset-text'); ?>
 															</div>
 														</div>
 
