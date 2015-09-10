@@ -800,25 +800,25 @@ html, body {
 
 body {
   color: #3b3b3b;
-  background-color: #E9E9E9;
+  background-color: #efefef;
   overflow-x: hidden;
-  transition: 1s; }
+  transition: .75s ease-out; }
 
 .wrap {
   width: 100%;
   padding: 0px 20px;
   position: relative;
-  background-color: #E9E9E9;
+  background-color: #efefef;
   z-index: 9999; }
   @media (min-width: 768px) {
     .wrap {
       padding: 0; } }
 
-h1, h2, h3, h4, p, .inset-container {
+h1, h2, h3, h4, p, ul, .inset-container {
   width: 100%;
   margin: 0 auto; }
   @media (min-width: 768px) {
-    h1, h2, h3, h4, p, .inset-container {
+    h1, h2, h3, h4, p, ul, .inset-container {
       max-width: 730px; } }
 
 .inset-container {
@@ -829,68 +829,6 @@ h1, h2, h3, h4, p, .inset-container {
       .inset-container .inset-text {
         width: 50%;
         float: left; } }
-
-.media {
-  max-width: 100%;
-  margin: 2em auto 3.5em auto;
-  text-align: center;
-  /* video */ }
-  @media (min-width: 768px) {
-    .media.inset {
-      width: 50%;
-      margin-top: 0; }
-      .media.inset.left {
-        float: left;
-        text-align: left;
-        padding-right: 40px; }
-      .media.inset.right {
-        float: right;
-        text-align: right;
-        padding-left: 40px; } }
-  .media.inset-center {
-    text-align: center; }
-    @media (min-width: 768px) {
-      .media.inset-center {
-        max-width: 730px; } }
-    .media.inset-center .caption {
-      max-width: 730px;
-      margin: 0 auto; }
-  .media.outset {
-    text-align: center; }
-    @media (min-width: 768px) {
-      .media.outset {
-        max-width: 730px; } }
-    @media (min-width: 1030px) {
-      .media.outset {
-        width: 1030px;
-        max-width: 80%; } }
-    .media.outset .caption {
-      max-width: 730px;
-      margin: 0 auto; }
-  .media.fill-width {
-    width: 100%;
-    height: 700px;
-    margin-top: 0; }
-  .media ul, .media ol {
-    list-style-type: none;
-    padding-bottom: 0;
-    max-width: 100%; }
-  .media .embed-container {
-    position: relative;
-    padding-bottom: 71%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: .5em; }
-  .media .embed-container iframe, .media .embed-container object, .media .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  .media .player .title {
-    display: none; }
 
 .alt {
   position: relative;
@@ -913,6 +851,75 @@ h1, h2, h3, h4, p, .inset-container {
     right: 100%; }
   .alt:after {
     left: 100%; }
+
+.media {
+  max-width: 100%;
+  margin: 2em auto 3.5em auto;
+  text-align: center;
+  /* video */ }
+  .media .caption {
+    max-width: 730px;
+    margin: 0 auto; }
+  @media (min-width: 768px) {
+    .media.inset {
+      width: 50%;
+      margin-top: 0;
+      margin-bottom: 0; }
+      .media.inset.left {
+        float: left;
+        text-align: left;
+        padding-right: 40px; }
+      .media.inset.right {
+        float: right;
+        text-align: right;
+        padding-left: 40px; } }
+  .media.inset-center {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .media.inset-center {
+        max-width: 730px; } }
+  .media.outset {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .media.outset {
+        max-width: 730px; } }
+    @media (min-width: 1030px) {
+      .media.outset {
+        width: 1030px;
+        max-width: 80%; } }
+  .media.fill-width {
+    width: 100%;
+    height: 700px;
+    margin-top: 0; }
+  .media ul, .media ol {
+    list-style-type: none;
+    padding-bottom: 0;
+    max-width: 100%; }
+  .media .embed-container {
+    position: relative;
+    height: 0;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 71%;
+    margin-bottom: .5em; }
+  .media .embed-container iframe, .media .embed-container object, .media .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .media .player .title {
+    display: none; }
+
+.video-wrap {
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .video-wrap {
+      max-width: 730px; } }
+  @media (min-width: 1030px) {
+    .video-wrap {
+      width: 1030px;
+      max-width: 80%; } }
 
 body {
   font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -957,18 +964,18 @@ h1, .h1 {
 
 h2, .h2 {
   font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1.6em; }
 
 h3, .h3 {
-  font-family: "Minotaur Sans Light", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px; }
+  font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px; }
 
 h3.project {
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 22px; }
 
-p {
+p, ul {
   font-size: 16px;
   line-height: 1.85em;
   -webkit-font-smoothing: auto; }
@@ -1155,10 +1162,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 #logo {
   position: fixed;
   display: block;
-  padding: 20px 35px;
+  padding: 25px 35px;
   left: 0;
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .85em; }
+  font-size: 18px;
+  z-index: 1000; }
 
 .link {
   position: fixed;
@@ -1167,22 +1175,32 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   top: 15px;
   right: 0;
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .85em; }
+  font-size: .85em;
+  z-index: 1000; }
+
+.hentry header {
+  margin: 1.5em auto 0; }
+  @media (min-width: 768px) {
+    .hentry header {
+      margin: 3em auto 0; } }
 
 .intro {
   width: 100%;
   padding: 35px;
-  padding-top: 90px;
+  padding-top: 60px;
   margin-bottom: 2em;
-  position: fixed;
   z-index: 0; }
   @media (min-width: 768px) {
     .intro {
-      max-width: 100%; } }
+      max-width: 860px;
+      padding-top: 4em; } }
+  @media (min-width: 1030px) {
+    .intro {
+      max-width: 1030px; } }
   .intro h1 {
     font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
-    margin-bottom: .25em;
+    margin-bottom: .5em;
     padding: 0;
     max-width: 100%; }
     @media (min-width: 480px) {
@@ -1193,38 +1211,39 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
         font-size: 40px; } }
     @media (min-width: 1030px) {
       .intro h1 {
-        font-size: 60px; } }
+        font-size: 40px; } }
   .intro h2 {
     font-size: 16px;
     -webkit-font-smoothing: auto;
     padding: 0;
     max-width: 100%; }
     .intro h2 a {
-      border-bottom: 1px solid rgba(59, 59, 59, 0.3); }
+      border-bottom: 1px solid rgba(59, 59, 59, 0.3);
+      padding-bottom: 2px;
+      transition: all .3s ease-out; }
+      .intro h2 a:hover {
+        border-color: #3b3b3b; }
 
 .menu-wrap {
   width: 100%;
   position: relative;
-  z-index: 1001;
-  background: #eeeeee;
-  margin-top: 380px; }
-  @media (min-width: 768px) {
-    .menu-wrap {
-      margin-top: 520px; } }
+  z-index: 1001; }
 
 nav {
   /* end .menu li */ }
   nav ul {
     width: 100%;
+    max-width: 100%;
     padding: 0; }
   nav li {
     text-align: left;
     line-height: 1.45;
-    border-bottom: 1px solid #3b3b3b;
+    border-bottom: 1px solid rgba(59, 59, 59, 0.15);
     text-rendering: optimizelegibility;
-    -webkit-font-smoothing: auto; }
+    -webkit-font-smoothing: auto;
+    list-style: none; }
     nav li:first-child {
-      border-top: 1px solid #3b3b3b; }
+      border-top: 1px solid rgba(59, 59, 59, 0.15); }
     nav li a {
       display: block;
       padding: 35px;
@@ -1232,14 +1251,14 @@ nav {
       transition: all .6s ease-out;
       -webkit-transition: all .6s ease-out; }
       nav li a:hover {
-        background: #fff; }
+        background: rgba(255, 255, 255, 0.1); }
     nav li .project-title {
       font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 20px;
       display: block; }
       @media (min-width: 768px) {
         nav li .project-title {
-          font-size: 28px;
+          font-size: 24px;
           line-height: 1.5em; } }
     nav li .project-tagline {
       font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1266,11 +1285,6 @@ nav {
   position: relative;
   /* entry content */
   /* end .entry-content */ }
-  #content .hentry header {
-    margin: 1.5em auto 0; }
-    @media (min-width: 768px) {
-      #content .hentry header {
-        margin: 3em auto 0; } }
   #content .entry-content {
     margin: 1.5em auto 3em;
     padding: 0; }
@@ -1323,10 +1337,11 @@ nav {
 #logo {
   position: fixed;
   display: block;
-  padding: 20px 35px;
+  padding: 25px 35px;
   left: 0;
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .85em; }
+  font-size: 18px;
+  z-index: 1000; }
 
 .link {
   position: fixed;
@@ -1335,7 +1350,14 @@ nav {
   top: 15px;
   right: 0;
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .85em; }
+  font-size: .85em;
+  z-index: 1000; }
+
+.hentry header {
+  margin: 1.5em auto 0; }
+  @media (min-width: 768px) {
+    .hentry header {
+      margin: 3em auto 0; } }
 
 /*********************
 LARGER MOBILE DEVICES

@@ -1,7 +1,7 @@
 $color-text:        #3b3b3b; //4a4a4a
 $color-text-light:  transparentize(#3b3b3b, .75);
-$color-background:  #E9E9E9;
-$color-border:      #ECECEC;
+$color-background:  #efefef; //E9E9E9
+$color-border:      transparentize(#3b3b3b, .85);
 
 
 $black:             #000;

@@ -1,19 +1,22 @@
 .intro {
   width: 100%;
   padding: 35px;
-  padding-top: 90px;
+  padding-top: 60px;
   margin-bottom: 2em;
-  position: fixed;
   z-index: 0;
 
   @include breakpoint($bp-medium) {
-    max-width: 100%;
+    max-width: 860px;
+    padding-top: 4em;
+  }
+  @include breakpoint($bp-large) {
+    max-width: 1030px;
   }
 
   h1 {
     font-family: $serif;
     font-size: 20px;
-    margin-bottom: .25em;
+    margin-bottom: .5em;
     padding: 0;
     max-width: 100%;
 
@@ -24,7 +27,7 @@
       font-size: 40px;
     }
     @include breakpoint($bp-large) {
-      font-size: 60px;
+      font-size: 40px;
     }
   }
   h2 {
@@ -34,6 +37,11 @@
     max-width: 100%;
     a {
       border-bottom: 1px solid transparentize($link-color, .7);
+      padding-bottom: 2px;
+      transition: all .3s ease-out;
+      &:hover {
+        border-color: $link-color;
+      }
     }
   }
 }
@@ -42,11 +50,11 @@
   width: 100%;
   position: relative;
   z-index: 1001;
-  background: lighten($color-background, 2%);
+  // background: darken($color-background, 4%);
 
-  margin-top: 380px;
+  // margin-top: 380px;
   @include breakpoint($bp-medium) {
-    margin-top: 520px;
+    // margin-top: 560px;
   }
 }
 
@@ -66,18 +74,20 @@ nav {
 
 	ul {
 		width: 100%;
+    max-width: 100%;
 		padding: 0;
 	}
 
 	li {
     text-align: left;
 		line-height: 1.45;
-    border-bottom: 1px solid $color-text;
+    border-bottom: 1px solid $color-border;
     text-rendering: optimizelegibility;
   	-webkit-font-smoothing: auto;
+    list-style: none;
 
     &:first-child {
-      border-top: 1px solid $color-text;
+      border-top: 1px solid $color-border;
     }
 
     a {
@@ -89,7 +99,7 @@ nav {
       -webkit-transition: all .6s ease-out;
 
       &:hover {
-        background: #fff;
+        background: transparentize($white, .9);
       }
     }
 
@@ -99,7 +109,7 @@ nav {
 			display: block;
 
 			@include breakpoint($bp-medium) {
-				font-size: 28px;
+				font-size: 24px;
 				line-height: 1.5em;
 			}
 			@include breakpoint($bp-large) {

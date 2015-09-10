@@ -1,19 +1,19 @@
 <?php
 /*
- Template Name: Projects
+ Template Name: Projects Homepage
  */
 ?>
 
 <?php get_header(); ?>
 
 <div class="intro">
-	<h1>Hello, I am a designer for the School of the Art Institute of Chicago’s Marketing & Communication department.</h1>
-	<h2>I am currently accepting project requests: <a href="">coreymargulis@gmail.com</a></h2>
+	<h1>I am interested in how we can incorporate technology into our lives in meaningful ways, blending the physical and digital worlds to make technology feel more natural and human.</h1>
+	<h2>I am currently accepting project requests. <a href="mailto:coreymargulis@gmail.com">Send me a message</a>.</h2>
 </div>
 
 <div class="menu-wrap">
 	<nav>
-		<ul>
+		<body>
 				<li>
 					<a id="saic" href="saic-edu">
 						<div class="project-title">saic.edu</div>
@@ -39,7 +39,7 @@
 				</a>
 			</li> -->
 			<li>
-				<a id="nichols-tower" href="">
+				<a id="nichols-tower" href="nichols-tower">
 					<div class="project-title">Nichols Tower</div>
 					<div class="project-tagline">A website for a new, collaborative tower in Chicago’s Lawndale neighborhood</div>
 				</a>
@@ -62,7 +62,7 @@
 					<div class="project-tagline">A dynamic identity for SAIC’s graduation ceremony</div>
 				</a>
 			</li>
- 		</ul>
+ 		</body>
 	</nav>
 
 <footer class="footer">
@@ -73,49 +73,59 @@
 
 	<script type="text/javascript">
     $(document).ready(function() {
-	    // $("#whats-fresh").hover(function() {
-	    //     $('body').css('background-color', '<?php the_field('title-color', 54); ?>');
-	    //       //$("#background").css('visibility', 'visible');
-	    // }, function() {
-	    //     // if you want to remove background
-	    //     // on mouse out then uncomment below line
-	    //     $('body').css('background-color', 'transparent');
-	    //     // $("#background").css('visibility', 'hidden');
-	    // })
-	    // $("#commencement").hover(function() {
-	    //     $('body').css('background-color', '<?php the_field('title-color', 49); ?>');
-	    // }, function() {
-	    //     $('body').css('background-color', 'transparent');
-	    // })
-	    // $("#pool-party").hover(function() {
-	    //     $('ul').css('background-color', '<?php the_field('title-color', 35); ?>');
-	    // }, function() {
-	    //     $('ul').css('background-color', 'transparent');
-	    // })
-	    // $("#pastel-artist").hover(function() {
-	    //     $('ul').css('background-color', '<?php the_field('title-color', 59); ?>');
-	    // }, function() {
-	    //     $('ul').css('background-color', 'transparent');
-	    // })
-	    // $("#sullivan-galleries").hover(function() {
-	    //     $('ul').css('background-color', '<?php the_field('title-color', 62); ?>');
-	    // }, function() {
-	    //     $('ul').css('background-color', 'transparent');
-	    // })
-	    // $("#conversations").hover(function() {
-	    //     $('ul').css('background-color', '<?php the_field('title-color', 117); ?>');
-	    // }, function() {
-	    //     $('ul').css('background-color', 'transparent');
-	    // })
-	    // $("#campus-signage").hover(function() {
-	    //     $('ul').css('background-color', '<?php the_field('title-color', 364); ?>');
-	    // }, function() {
-	    //     $('ul').css('background-color', 'transparent');
-	    // })
-			// $("ul a").hover(function() {
+	    $("#whats-fresh").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 54); ?>');
+	          //$("#background").css('visibility', 'visible');
+	    }, function() {
+	        // if you want to remove background
+	        // on mouse out then uncomment below line
+	        $('body').css('background-color', '#efefef');
+	        // $("#background").css('visibility', 'hidden');
+	    })
+	    $("#commencement").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 49); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+	    $("#pool-party").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 35); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+	    $("#pastel-artist").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 59); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+	    $("#sbodylivan-galleries").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 62); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+	    $("#conversations").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 117); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+	    $("#campus-signage").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 364); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+			$("#saic").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 595); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+			$("#nichols-tower").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 692); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+			// $("body a").hover(function() {
 	    //     $('li').css('background-color', '<?php the_field('title-color', 364); ?>');
 	    // }, function() {
-	    //     $('li').css('background-color', 'transparent');
+	    //     $('li').css('background-color', '#efefef');
 	    // })
 		});
 	</script>
@@ -136,7 +146,7 @@
 	</div>
 </div> -->
 
-<script>
+<!-- <script>
 	(function() {
 	  var triggerBttn = document.getElementById( 'trigger-overlay' ),
 	    overlay = document.querySelector( 'div.overlay' ),
@@ -177,4 +187,4 @@
 	  triggerBttn.addEventListener( 'click', toggleOverlay );
 	  closeBttn.addEventListener( 'click', toggleOverlay );
 	})();
-</script>
+</script> -->

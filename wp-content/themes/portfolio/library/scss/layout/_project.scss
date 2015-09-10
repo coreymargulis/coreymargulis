@@ -2,56 +2,6 @@
 	z-index: 2;
 	position: relative;
 
-	.hentry header {
-		margin: 1.5em auto 0;
-
-		@include breakpoint($bp-medium) {
-			margin: 3em auto 0;
-		}
-	}
-
-	// .hentry {
-	// 	header {
-	// 		margin: 1.5em auto 1.5em;
-	// 		// padding: 0 1.5em 0 1.5em;
-	// 	}
-	//
-	// 	footer {
-	// 		padding: 6em 3em;
-	// 		color: $white;
-	// 		position: relative;
-	//
-	// 		&:before, &:after {
-	// 			content: "";
-	// 			position: absolute;
-	// 			/* background: white; */  /* Match the background */
-	// 			top: 0;
-	// 			bottom: 0;
-	// 			width: 9999px;   /* some huge width */
-	// 			display: block;
-	// 		}
-	// 		&:before {
-	// 			right: 100%;
-	// 		}
-	// 		&:after {
-	// 			left: 100%;
-	// 		}
-	//
-	// 		p {
-	// 			margin: 0;
-	//
-	// 		}
-	//
-	// 		h3 {
-	// 			margin: 0;
-	// 		}
-	//
-	// 		#next-project {
-	// 			margin-bottom: 20px;
-	// 		}
-	// 	}
-	// } /* end .hentry */
-
 	/* entry content */
 	.entry-content {
 		margin: 1.5em auto 3em;

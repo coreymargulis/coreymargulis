@@ -30,7 +30,7 @@
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-		<link rel='stylesheet' type='text/css' href='../style.php' />
+		<!-- <link rel='stylesheet' type='text/css' href='../style.php' /> -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
@@ -53,7 +53,7 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?>
 
 		<header class="menu">
 				<a id="logo" href="/">Corey Margulis</a>

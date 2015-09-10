@@ -16,9 +16,7 @@
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-
-
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
+          <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
 
                 <header>
 
@@ -113,57 +111,59 @@
 
 											<?php elseif( get_row_layout() == 'video' ): ?>
 
-							        	<div class="media">
+												<div class="video-wrap">
+													<div class="media">
 
-													<div class="embed-container" style="padding-bottom:<?php the_sub_field('padding'); ?>%;">
-													<?php
+														<div class="embed-container" style="padding-bottom:<?php the_sub_field('padding'); ?>%;">
+														<?php
 
-												// get iframe HTML
-												$iframe = get_sub_field('video');
+														// get iframe HTML
+														$iframe = get_sub_field('video');
 
+														// use preg_match to find iframe src
+														preg_match('/src="(.+?)"/', $iframe, $matches);
+														$src = $matches[1];
+															if (get_sub_field('autoplay')){
+																$params = array(
+														    'title'    => 0,
+														    'portrait'    => 0,
+														    'byline'    => 0,
+														    'autoplay'    => 1,
+														    'loop'    => 1,
+														    'color'    => 'ffffff'
+															);
+														}
 
-												// use preg_match to find iframe src
-												preg_match('/src="(.+?)"/', $iframe, $matches);
-												$src = $matches[1];
-																																								if (get_sub_field('autoplay')){
-																																									$params = array(
-												    'title'    => 0,
-												    'portrait'    => 0,
-												    'byline'    => 0,
-												    'autoplay'    => 1,
-												    'loop'    => 1,
-												    'color'    => 'ffffff'
-												);
-												}
+														else {
+														// add extra params to iframe src
+														$params = array(
+														    'title'    => 0,
+														    'portrait'    => 0,
+														    'byline'    => 0,
+															'color'    => 'ffffff'
+														);
+														}
 
-												else {
-												// add extra params to iframe src
-												$params = array(
-												    'title'    => 0,
-												    'portrait'    => 0,
-												    'byline'    => 0,
-													'color'    => 'ffffff'
-												);
-												}
+														$new_src = add_query_arg($params, $src);
 
-												$new_src = add_query_arg($params, $src);
+														$iframe = str_replace($src, $new_src, $iframe);
 
-												$iframe = str_replace($src, $new_src, $iframe);
+														// add extra attributes to iframe html
+														$attributes = 'frameborder="0"';
 
+														$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 
-												// add extra attributes to iframe html
-												$attributes = 'frameborder="0"';
+														// echo $iframe
+														echo $iframe;
 
-												$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+														?>
+														</div>
 
+														<div class="caption"><?php the_sub_field("image-caption"); ?></div>
 
-												// echo $iframe
-												echo $iframe;
-
-												?>
 							        		</div>
-											<div class="caption"><?php the_sub_field("image-caption"); ?></div>
-							        	</div>
+
+												</div>
 
 									<?php elseif( get_row_layout() == 'gallery' ): ?>
 
