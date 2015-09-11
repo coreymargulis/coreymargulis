@@ -1,26 +1,32 @@
 			<footer class="footer" role="contentinfo">
 
-				<div id="inner-footer" class="wrap cf">
+				<?php
+					$post_object = get_field('next-project');
 
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => '',                              // remove nav container
-    					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-        			'after' => '',                                  // after the menu
-        			'link_before' => '',                            // before each link
-        			'link_after' => '',                             // after each link
-        			'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
-					</nav>
+					if( $post_object ):
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+						// override $post
+						$post = $post_object;
+						setup_postdata( $post );
+				?>
 
-				</div>
+				<a href="<?php the_permalink(); ?>">
+					<?php $bg = get_field( 'hero-image' ); ?>
+					<section class="next-project" style="background-color:<?php the_field('title-color'); ?>; opacity: .85;">
+						<div id="next-project">Next Project</div>
+						<h3><?php the_title(); ?></h3>
+						<?php the_field('tagline'); ?>
+					</section> <?php // end next project section ?>
+				</a>
+
+						<!-- <a href="/">
+							<section class="logo-footer" style="background-color:<?php the_field('title-color'); ?>; opacity: 1;">
+								<div id="logo-footer" href="/">All Projects</div>
+							</section>
+						</a> -->
+
+						<?php wp_reset_postdata();  ?>
+				<?php endif; ?>
 
 			</footer>
 

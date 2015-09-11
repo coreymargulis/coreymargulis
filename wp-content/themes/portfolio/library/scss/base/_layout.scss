@@ -56,3 +56,28 @@ h1, h2, h3, h4, p, ul, .inset-container {
 		left: 100%;
 		}
 }
+
+.alt-pool {
+  position: relative;
+  background: #39a7fb;
+  padding-top: 3em !important;
+  padding-bottom: 1em !important;
+	margin-bottom: 0;
+	margin-top: 4em !important;
+
+	&:before, &:after {
+	   content: "";
+	   position: absolute;
+	   background: #39a7fb;  /* Match the background */
+	   top: 0;
+	   bottom: 0;
+	   width: 9999px;  /* some huge width */
+	   display: block;
+	   }
+	&:before {
+		right: 100%;
+	  	}
+	&:after {
+		left: 100%;
+		}
+}

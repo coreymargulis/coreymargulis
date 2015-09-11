@@ -1,13 +1,15 @@
 .intro {
   width: 100%;
-  padding: 35px;
-  padding-top: 60px;
-  margin-bottom: 2em;
+  padding: 20px;
+  padding-top: 4.5em;
+  margin-bottom: 1em;
   z-index: 0;
 
   @include breakpoint($bp-medium) {
     max-width: 860px;
+    padding: 35px;
     padding-top: 4em;
+    margin-bottom: 2em;
   }
   @include breakpoint($bp-large) {
     max-width: 1030px;
@@ -92,14 +94,18 @@ nav {
 
     a {
       display: block;
-      padding: 35px;
-      padding-bottom: 38px;
-
-      transition: all .6s ease-out;
-      -webkit-transition: all .6s ease-out;
+      padding: 30px 20px;
 
       &:hover {
         background: transparentize($white, .9);
+      }
+
+      @include breakpoint($bp-medium) {
+        padding: 35px;
+        padding-bottom: 38px;
+
+        transition: all .6s ease-out;
+        -webkit-transition: all .6s ease-out;
       }
     }
 
@@ -135,9 +141,14 @@ nav {
 	opacity: .25;
 }
 
-.footer {
+.copyright {
   font-family: $sans-light;
   font-size: 12px;
-  padding: 35px;
+  padding: 20px;
   padding-top: 50px;
+
+  @include breakpoint($bp-medium) {
+    padding: 35px;
+    padding-top: 50px;
+  }
 }

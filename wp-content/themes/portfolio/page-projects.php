@@ -8,7 +8,7 @@
 
 <div class="intro">
 	<h1>I am interested in how we can incorporate technology into our lives in meaningful ways, blending the physical and digital worlds to make technology feel more natural and human.</h1>
-	<h2>I am currently accepting project requests. <a href="mailto:coreymargulis@gmail.com">Send me a message</a>.</h2>
+	<h2>I am currently accepting project requests. Send me a <a href="mailto:coreymargulis@gmail.com">message</a>.</h2>
 </div>
 
 <div class="menu-wrap">
@@ -65,7 +65,7 @@
  		</body>
 	</nav>
 
-<footer class="footer">
+<footer class="copyright">
 	© <?php echo date('Y'); ?> Corey Margulis
 </footer>
 

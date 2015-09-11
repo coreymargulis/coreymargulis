@@ -852,6 +852,28 @@ h1, h2, h3, h4, p, ul, .inset-container {
   .alt:after {
     left: 100%; }
 
+.alt-pool {
+  position: relative;
+  background: #39a7fb;
+  padding-top: 3em !important;
+  padding-bottom: 1em !important;
+  margin-bottom: 0;
+  margin-top: 4em !important; }
+  .alt-pool:before, .alt-pool:after {
+    content: "";
+    position: absolute;
+    background: #39a7fb;
+    /* Match the background */
+    top: 0;
+    bottom: 0;
+    width: 9999px;
+    /* some huge width */
+    display: block; }
+  .alt-pool:before {
+    right: 100%; }
+  .alt-pool:after {
+    left: 100%; }
+
 .media {
   max-width: 100%;
   margin: 2em auto 3.5em auto;
@@ -959,21 +981,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 {
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 30px;
-  line-height: 1.45em; }
+  line-height: 1.45em;
+  font-size: 20px; }
+  @media (min-width: 768px) {
+    h1, .h1 {
+      font-size: 30px; } }
 
 h2, .h2 {
   font-family: "Minotaur Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.6em; }
+  @media (min-width: 768px) {
+    h2, .h2 {
+      font-size: 30px; } }
 
 h3, .h3 {
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 22px; }
-
-h3.project {
-  font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 22px; }
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    h3, .h3 {
+      font-size: 22px; } }
 
 p, ul {
   font-size: 16px;
@@ -981,7 +1008,7 @@ p, ul {
   -webkit-font-smoothing: auto; }
 
 .caption {
-  font-size: .6em;
+  font-size: 12px;
   line-height: 1.65em;
   font-family: "Minotaur Sans Light", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased !important;
@@ -1023,10 +1050,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
 .hero-image-container {
-  /* height: 70%; */
-  height: 520px; }
+  height: 280px; }
+  @media (min-width: 768px) {
+    .hero-image-container {
+      height: 520px; } }
   .hero-image-container .hero-image {
-    position: fixed;
     height: 520px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1162,11 +1190,15 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 #logo {
   position: fixed;
   display: block;
-  padding: 25px 35px;
   left: 0;
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  z-index: 1000; }
+  z-index: 1000;
+  font-size: 16px;
+  padding: 25px 20px; }
+  @media (min-width: 768px) {
+    #logo {
+      padding: 25px 35px;
+      font-size: 18px; } }
 
 .link {
   position: fixed;
@@ -1186,14 +1218,16 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 .intro {
   width: 100%;
-  padding: 35px;
-  padding-top: 60px;
-  margin-bottom: 2em;
+  padding: 20px;
+  padding-top: 4.5em;
+  margin-bottom: 1em;
   z-index: 0; }
   @media (min-width: 768px) {
     .intro {
       max-width: 860px;
-      padding-top: 4em; } }
+      padding: 35px;
+      padding-top: 4em;
+      margin-bottom: 2em; } }
   @media (min-width: 1030px) {
     .intro {
       max-width: 1030px; } }
@@ -1246,12 +1280,15 @@ nav {
       border-top: 1px solid rgba(59, 59, 59, 0.15); }
     nav li a {
       display: block;
-      padding: 35px;
-      padding-bottom: 38px;
-      transition: all .6s ease-out;
-      -webkit-transition: all .6s ease-out; }
+      padding: 30px 20px; }
       nav li a:hover {
         background: rgba(255, 255, 255, 0.1); }
+      @media (min-width: 768px) {
+        nav li a {
+          padding: 35px;
+          padding-bottom: 38px;
+          transition: all .6s ease-out;
+          -webkit-transition: all .6s ease-out; } }
     nav li .project-title {
       font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 20px;
@@ -1274,11 +1311,15 @@ nav {
   z-index: -1000;
   opacity: .25; }
 
-.footer {
+.copyright {
   font-family: "Minotaur Sans Light", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
-  padding: 35px;
+  padding: 20px;
   padding-top: 50px; }
+  @media (min-width: 768px) {
+    .copyright {
+      padding: 35px;
+      padding-top: 50px; } }
 
 #content {
   z-index: 2;
@@ -1337,11 +1378,15 @@ nav {
 #logo {
   position: fixed;
   display: block;
-  padding: 25px 35px;
   left: 0;
   font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  z-index: 1000; }
+  z-index: 1000;
+  font-size: 16px;
+  padding: 25px 20px; }
+  @media (min-width: 768px) {
+    #logo {
+      padding: 25px 35px;
+      font-size: 18px; } }
 
 .link {
   position: fixed;
