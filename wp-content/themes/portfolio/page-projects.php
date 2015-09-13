@@ -44,12 +44,12 @@
 					<div class="project-tagline">A website for a new, collaborative tower in Chicago’s Lawndale neighborhood</div>
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a id="pastel-artist" href="pastel-artist">
 					<div class="project-title">Pastel Artist</div>
 					<div class="project-tagline">A revamped website for an internationally renowned pastel artist</div>
 				</a>
-			</li>
+			</li> -->
 			<li>
 				<a id="whats-fresh" href="whats-fresh">
 					<div class="project-title">What’s Fresh</div>

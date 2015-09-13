@@ -1,8 +1,27 @@
 .next-project {
-	text-align: center;
+	text-align: left;
 	color: $white;
-	padding: 4em 15% 4.25em 15%;
+	padding: 4em 0 4.25em 0;
+	margin: 0 auto;
+	max-width: 730px;
 	transition: all .4s ease-in-out;
+	position: relative;
+
+	&:before, &:after {
+    content: "";
+    position: absolute;
+    background: inherit;  /* Match the background */
+    top: 0;
+    bottom: 0;
+    width: 9999px;  /* some huge width */
+    display: block;
+  }
+	&:before {
+		right: 100%;
+	}
+	&:after {
+		left: 100%;
+	}
 
 	&:hover {
 		opacity: .95 !important;
@@ -15,6 +34,7 @@
 	}
 	h3 {
 		margin: 0px;
+		font-family: $serif-bold;
 	}
 }
 

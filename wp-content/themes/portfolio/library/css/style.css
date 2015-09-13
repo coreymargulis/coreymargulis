@@ -804,6 +804,9 @@ body {
   overflow-x: hidden;
   transition: .75s ease-out; }
 
+body.home #logo {
+  position: relative; }
+
 .wrap {
   width: 100%;
   padding: 0px 20px;
@@ -1019,16 +1022,6 @@ p, ul {
 Site Name:
 Author:
 
-Stylesheet: Alert Styles
-
-If you want to use these alerts in your design, you can. If not,
-you can just remove this stylesheet.
-
-******************************************************************/
-/******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Button Styles
 
 Buttons are a pretty important part of your site's style, so it's
@@ -1170,17 +1163,35 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   transform: translateY(10%) rotateX(-15deg); }
 
 .next-project {
-  text-align: center;
+  text-align: left;
   color: #fff;
-  padding: 4em 15% 4.25em 15%;
-  transition: all .4s ease-in-out; }
+  padding: 4em 0 4.25em 0;
+  margin: 0 auto;
+  max-width: 730px;
+  transition: all .4s ease-in-out;
+  position: relative; }
+  .next-project:before, .next-project:after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    /* Match the background */
+    top: 0;
+    bottom: 0;
+    width: 9999px;
+    /* some huge width */
+    display: block; }
+  .next-project:before {
+    right: 100%; }
+  .next-project:after {
+    left: 100%; }
   .next-project:hover {
     opacity: .95 !important; }
   .next-project #next-project {
     font-family: "Minotaur Sans Regular", "Neuzeit S LT Std Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 20px; }
   .next-project h3 {
-    margin: 0px; }
+    margin: 0px;
+    font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .menu {
   position: fixed;
@@ -1219,14 +1230,13 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .intro {
   width: 100%;
   padding: 20px;
-  padding-top: 4.5em;
+  padding-top: 2em;
   margin-bottom: 1em;
   z-index: 0; }
   @media (min-width: 768px) {
     .intro {
       max-width: 860px;
       padding: 35px;
-      padding-top: 4em;
       margin-bottom: 2em; } }
   @media (min-width: 1030px) {
     .intro {
@@ -1410,220 +1420,18 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 *********************/
-@media only screen and (min-width: 481px) {
-  /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: 481px and Up Stylesheet
-  
-  This stylesheet is loaded for larger devices. It's set to
-  481px because at 480px it would load on a landscaped iPhone.
-  This isn't ideal because then you would be loading all those
-  extra styles on that same mobile connection.
-  
-  A word of warning. This size COULD be a larger mobile device,
-  so you still want to keep it pretty light and simply expand
-  upon your base.scss styles.
-  
-  ******************************************************************/
-  /*
-  IMPORTANT NOTE ABOUT SASS 3.3 & UP
-  You can't use @extend within media queries
-  anymore, so just be aware that if you drop
-  them in here, they won't work.
-  */
-  /*********************
-  H1, H2, H3, H4, H5 STYLES
-  *********************/
-  h1 {
-    	/*
-    font-size: 1.25em;
-    	line-height: 1.333em;
-    	margin: 0 0 .25em 0;
-    */ }
-
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */ }
-    .menu ul {
-      /* end .menu ul li */
-      /* highlight current page */
-      /* end current highlighters */ }
-      .menu ul li {
-        /*
-        plan your menus and drop-downs wisely.
-        */ }
-        .menu ul li a {
-          /*
-          you can use hover styles here even though this size
-          has the possibility of being a mobile device.
-          */ }
-
-  /* end .menu */
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* entry content */
-  .entry-content {
-    /* at this larger size, we can start to align images */ }
-    .entry-content .alignleft, .entry-content img.alignleft {
-      margin-right: 1.5em;
-      display: inline;
-      float: left; }
-    .entry-content .alignright, .entry-content img.alignright {
-      margin-left: 1.5em;
-      display: inline;
-      float: right; }
-    .entry-content .aligncenter, .entry-content img.aligncenter {
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      clear: both; }
-
-  /* end .entry-content */
-  .overlay .overlay-close-container .overlay-close {
-    background-size: 40px 40px; }
-  .overlay .profile {
-    height: 30%;
-    top: 30%;
-    width: 370px; }
-
-  /*********************
-  FOOTER STYLES
-  *********************/
-  .next-project {
-    padding: 4em 25% 4.25em 25%; }
-    .next-project #next-project {
-      font-size: .8em; }
-
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */ }
 /*********************
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
-@media only screen and (min-width: 768px) {
-  /*********************
-  HEADER STYLES
-  *********************/
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  .entry-content {
-    padding: 0; }
-    .entry-content h3 {
-      margin: 1.75em auto 0.75em; }
-
-  .overlay .profile {
-    height: 42%;
-    width: 550px; }
-
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
-  .sidebar {
-    margin-top: 2.2em; }
-
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em; }
-
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0; }
-    .widget ul li {
-      margin-bottom: 0.75em;
-      /* deep nesting */ }
-      .widget ul li ul {
-        margin-top: 0.75em;
-        padding-left: 1em; }
-
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */ }
-
-  /* end .footer-links */ }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
 other displays with a 2x resolution. You can also create a media
 query for retina AND a certain size if you want. Go Nuts.
 *********************/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: Retina Screens & Devices Stylesheet
-  
-  When handling retina screens you need to make adjustments, especially
-  if you're not using font icons. Here you can add them in one neat
-  place.
-  
-  ******************************************************************/
-  /* 
-  
-  EXAMPLE 
-  Let's say you have an image and you need to make sure it looks ok
-  on retina screens. Let's say we have an icon which dimension are
-  24px x 24px. In your regular stylesheets, it would look something
-  like this:
-  
-  .icon {
-  	width: 24px;
-  	height: 24px;
-  	background: url(img/test.png) no-repeat;
-  }
-  
-  For retina screens, we have to make some adjustments, so that image
-  doesn't look blurry. So, taking into account the image above and the
-  dimensions, this is what we would put in our retina stylesheet:
-  
-  .icon {
-  	background: url(img/test@2x.png) no-repeat;
-  	background-size: 24px 24px;
-  }
-  
-  So, you would create the same icon, but at double the resolution, meaning 
-  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
-  (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go. 
-  
-  */ }
 /*********************
 PRINT STYLESHEET
 Feel free to customize this. Remember to add things that won't make
