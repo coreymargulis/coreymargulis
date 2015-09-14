@@ -207,14 +207,14 @@ add_action('wp_print_styles', 'bones_fonts');
 
 
 
-/*ADD SCRIPTS*/ 
+/*ADD SCRIPTS*/
 
 function my_add_scripts() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('flexslider', get_stylesheet_directory_uri().'/library/js/min/jquery.flexslider-min.js', array('jquery'));
     wp_enqueue_script('flexslider-init', get_stylesheet_directory_uri().'/library/js/libs/flexslider-init.js', array('jquery', 'flexslider'));
-    wp_enqueue_script('headroom', get_stylesheet_directory_uri().'/library/js/libs/headroom.js', array('jquery')); 
-    wp_enqueue_script('classie', get_stylesheet_directory_uri().'/library/js/libs/classie.js', array('jquery')); 
+    wp_enqueue_script('headroom', get_stylesheet_directory_uri().'/library/js/libs/headroom.js', array('jquery'));
+    wp_enqueue_script('classie', get_stylesheet_directory_uri().'/library/js/libs/classie.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'my_add_scripts');
 
@@ -222,6 +222,10 @@ function my_add_styles() {
     wp_enqueue_style('flexslider', get_stylesheet_directory_uri().'/library/css/flexslider.css');
 }
 add_action('wp_enqueue_scripts', 'my_add_styles');
+
+//
+
+
 
 
 /*TEST*/
@@ -233,7 +237,7 @@ function flexslider()
     // or
     // Register the script like this for a theme:
     wp_register_script( 'flexslider', get_template_directory_uri() . '/js/flexslider.js' );
- 
+
     // For either a plugin or a theme, you can then enqueue the script:
     wp_enqueue_script( 'flexslider' );
 }

@@ -123,24 +123,26 @@
 														// use preg_match to find iframe src
 														preg_match('/src="(.+?)"/', $iframe, $matches);
 														$src = $matches[1];
-															if (get_sub_field('autoplay')){
-																$params = array(
-														    'title'    => 0,
-														    'portrait'    => 0,
-														    'byline'    => 0,
-														    'autoplay'    => 1,
-														    'loop'    => 1,
-														    'color'    => 'ffffff'
-															);
+														if (get_sub_field('autoplay')){
+															$params = array(
+													    'title'    => 0,
+													    'portrait'    => 0,
+													    'byline'    => 0,
+													    'autoplay'    => 1,
+													    'loop'    => 1,
+													    'color'    => 'ffffff',
+															'autopause'			=> 0
+														);
 														}
 
 														else {
 														// add extra params to iframe src
 														$params = array(
-														    'title'    => 0,
-														    'portrait'    => 0,
-														    'byline'    => 0,
-															'color'    => 'ffffff'
+													    'title'    => 0,
+													    'portrait'    => 0,
+													    'byline'    => 0,
+															'color'    => 'ffffff',
+															'autopause'			=> 0
 														);
 														}
 
