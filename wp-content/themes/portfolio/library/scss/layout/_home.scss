@@ -9,6 +9,8 @@
     max-width: 860px;
     padding: 35px;
     margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
   }
   @include breakpoint($bp-large) {
     max-width: 1030px;
@@ -60,19 +62,6 @@
 }
 
 nav {
-	// height: 100%;
-	// width: 100%;
-	// position: absolute;
-	// top: 0px;
-	// display: table;
-	// z-index: -100;
-
-  // a {
-  //   &:hover {
-  //     background: #fff;
-  //   }
-  // }
-
 	ul {
 		width: 100%;
     max-width: 100%;
@@ -94,17 +83,40 @@ nav {
     a {
       display: block;
       padding: 30px 20px;
+      position: relative;
 
       &:hover {
         background: transparentize($white, .9);
       }
 
+      &:before, &:after {
+         content: "";
+         position: absolute;
+         background: inherit;  /* Match the background */
+         top: 0;
+         bottom: 0;
+         width: 9999px;  /* some huge width */
+         display: block;
+         }
+      &:before {
+        right: 100%;
+      }
+      &:after {
+        left: 100%;
+      }
+
       @include breakpoint($bp-medium) {
         padding: 35px;
         padding-bottom: 38px;
+        max-width: 860px;
+        margin: 0 auto;
 
         transition: all .6s ease-out;
         -webkit-transition: all .6s ease-out;
+      }
+
+      @include breakpoint($bp-large) {
+        max-width: 1030px;
       }
     }
 
@@ -149,5 +161,11 @@ nav {
   @include breakpoint($bp-medium) {
     padding: 35px;
     padding-top: 50px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  @include breakpoint($bp-large) {
+    max-width: 1030px;
   }
 }

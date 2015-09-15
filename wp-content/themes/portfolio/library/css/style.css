@@ -1236,7 +1236,9 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     .intro {
       max-width: 860px;
       padding: 35px;
-      margin-bottom: 2em; } }
+      margin-bottom: 2em;
+      margin-left: auto;
+      margin-right: auto; } }
   @media (min-width: 1030px) {
     .intro {
       max-width: 1030px; } }
@@ -1289,15 +1291,35 @@ nav {
       border-top: 1px solid rgba(59, 59, 59, 0.15); }
     nav li a {
       display: block;
-      padding: 30px 20px; }
+      padding: 30px 20px;
+      position: relative; }
       nav li a:hover {
         background: rgba(255, 255, 255, 0.1); }
+      nav li a:before, nav li a:after {
+        content: "";
+        position: absolute;
+        background: inherit;
+        /* Match the background */
+        top: 0;
+        bottom: 0;
+        width: 9999px;
+        /* some huge width */
+        display: block; }
+      nav li a:before {
+        right: 100%; }
+      nav li a:after {
+        left: 100%; }
       @media (min-width: 768px) {
         nav li a {
           padding: 35px;
           padding-bottom: 38px;
+          max-width: 860px;
+          margin: 0 auto;
           transition: all .6s ease-out;
           -webkit-transition: all .6s ease-out; } }
+      @media (min-width: 1030px) {
+        nav li a {
+          max-width: 1030px; } }
     nav li .project-title {
       font-family: "Minotaur Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 20px;
@@ -1328,7 +1350,12 @@ nav {
   @media (min-width: 768px) {
     .copyright {
       padding: 35px;
-      padding-top: 50px; } }
+      padding-top: 50px;
+      max-width: 860px;
+      margin: 0 auto; } }
+  @media (min-width: 1030px) {
+    .copyright {
+      max-width: 1030px; } }
 
 #content {
   z-index: 2;
@@ -1340,6 +1367,12 @@ nav {
     padding: 0; }
     #content .entry-content p {
       margin-bottom: 1.5em; }
+      #content .entry-content p a {
+        border-bottom: 1px solid rgba(59, 59, 59, 0.3);
+        padding-bottom: 2px;
+        transition: all .3s ease-out; }
+        #content .entry-content p a:hover {
+          border-color: #3b3b3b; }
     #content .entry-content h3 {
       margin: 1.75em auto 0.75em; }
     #content .entry-content ul, #content .entry-content ol {
