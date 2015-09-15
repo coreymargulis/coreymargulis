@@ -97,7 +97,7 @@
 													</div>
 
 												<?php elseif(get_sub_field('layout') == "outset") : ?>
-													<div class="media outset<?php if( get_sub_field('bkgd-color-change')){ ?> alt<?php } ?>">
+													<div class="media outset<?php if( get_sub_field('bkgd-color-change')){ ?> alt" style="background-color:<?php the_sub_field('custom-color'); ?><?php } ?>">
 														<img src="<?php the_sub_field("image"); ?>" alt="" class="<?php if( get_sub_field('drop-shadow')){ ?>drop-shadow<?php } ?>"/>
 														<div class="caption"><?php the_sub_field("image-caption"); ?></div>
 													</div>

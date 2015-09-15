@@ -835,7 +835,6 @@ h1, h2, h3, h4, p, ul, .inset-container {
 
 .alt {
   position: relative;
-  background: #D8D8D8;
   padding-top: 4em !important;
   padding-bottom: 4em !important;
   margin-bottom: 0;
@@ -843,7 +842,7 @@ h1, h2, h3, h4, p, ul, .inset-container {
   .alt:before, .alt:after {
     content: "";
     position: absolute;
-    background: #D8D8D8;
+    background: inherit;
     /* Match the background */
     top: 0;
     bottom: 0;

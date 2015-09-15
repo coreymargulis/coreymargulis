@@ -34,7 +34,6 @@ h1, h2, h3, h4, p, ul, .inset-container {
 
 .alt {
   position: relative;
-  background: $process;
   padding-top: 4em !important;
   padding-bottom: 4em !important;
 	margin-bottom: 0;
@@ -43,7 +42,7 @@ h1, h2, h3, h4, p, ul, .inset-container {
 	&:before, &:after {
 	   content: "";
 	   position: absolute;
-	   background: $process;  /* Match the background */
+	   background: inherit;  /* Match the background */
 	   top: 0;
 	   bottom: 0;
 	   width: 9999px;  /* some huge width */
