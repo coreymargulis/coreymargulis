@@ -15,6 +15,12 @@
 	<nav>
 		<body>
 				<li>
+					<a id="truth-labs" href="truth-labs">
+						<div class="project-title">Truth Labs</div>
+						<div class="project-tagline">Redesigning an eCommerce analytics tool</div>
+					</a>
+				</li>
+				<li>
 					<a id="saic" href="saic-edu">
 						<div class="project-title">saic.edu</div>
 						<div class="project-tagline">Making the site responsive and improving the user experience for department pages</div>
@@ -119,6 +125,11 @@
 	    })
 			$("#nichols-tower").hover(function() {
 	        $('body').css('background-color', '<?php the_field('title-color', 692); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+			$("#truth-labs").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 793); ?>');
 	    }, function() {
 	        $('body').css('background-color', '#efefef');
 	    })
