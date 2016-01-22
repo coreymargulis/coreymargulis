@@ -7,6 +7,11 @@
 	transition: all .4s ease-in-out;
 	position: relative;
 
+	@include breakpoint($bp-medium) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	&:before, &:after {
     content: "";
     position: absolute;

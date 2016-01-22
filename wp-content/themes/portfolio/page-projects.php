@@ -14,12 +14,12 @@
 <div class="menu-wrap">
 	<nav>
 		<body>
-				<!-- <li>
+				<li>
 					<a id="truth-labs" href="truth-labs">
 						<div class="project-title">Truth Labs</div>
-						<div class="project-tagline">Redesigning an eCommerce analytics tool</div>
+						<div class="project-tagline">Turning complexity into clarity</div>
 					</a>
-				</li> -->
+				</li>
 				<li>
 					<a id="saic" href="saic-edu">
 						<div class="project-title">saic.edu</div>
