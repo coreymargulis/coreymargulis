@@ -1383,7 +1383,8 @@ nav {
       margin: 0 auto;
       padding-bottom: 1.5em; }
     #content .entry-content ul {
-      list-style-type: disc; }
+      list-style-type: disc;
+      padding-left: 1em; }
     #content .entry-content blockquote {
       margin: 0 0 1.5em 0.75em;
       padding: 0 0 0 0.75em;

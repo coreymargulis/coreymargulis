@@ -38,12 +38,6 @@
 					<div class="project-tagline">Related videos reimagined</div>
 				</a>
 			</li>
-			<!-- <li>
-				<a id="" href="">
-					<div class="project-title">150 Years</div>
-					<div class="project-tagline">Making the site responsive and improving the user experience for department pages</div>
-				</a>
-			</li> -->
 			<li>
 				<a id="nichols-tower" href="nichols-tower">
 					<div class="project-title">Nichols Tower</div>
