@@ -1,12 +1,11 @@
 .hero-image-container {
-  height: 280px;
-  
+  height: 40vh;
+
   @include breakpoint($bp-medium) {
-    height: 520px;
+    height: 60vh;
   }
 
   .hero-image {
-    height: 520px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;

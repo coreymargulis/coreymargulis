@@ -8,28 +8,40 @@
 
 <div class="intro">
 	<h1>I am interested in how we can incorporate technology into our lives in meaningful ways, blending the physical and digital worlds to make technology feel more natural and human.</h1>
-	<h2>I am currently accepting project requests. Send me a <a href="mailto:coreymargulis@gmail.com">message</a>.</h2>
+	<!-- <h2><a href="mailto:coreymargulis@gmail.com">Email me</a></h2> -->
 </div>
 
 <div class="menu-wrap">
 	<nav>
 		<body>
 				<li>
-					<a id="truth-labs" href="truth-labs">
-						<div class="project-title">Truth Labs</div>
+					<a id="asset-location-recovery" href="asset-location-recovery">
+						<div class="project-title">Asset Location & Recovery</div>
 						<div class="project-tagline">Turning complexity into clarity</div>
 					</a>
 				</li>
 				<li>
-					<a id="saic" href="saic-edu">
-						<div class="project-title">saic.edu</div>
-						<div class="project-tagline">Making the site responsive and improving the user experience for department pages</div>
+					<a id="financial-services" href="financial-services">
+						<div class="project-title">Financial Services</div>
+						<div class="project-tagline">...</div>
 					</a>
 				</li>
 				<li>
-					<a id="campus-signage" href="campus-signage">
-						<div class="project-title">Campus Signage</div>
-						<div class="project-tagline">A flexible signage system for the School of the Art Institute of Chicago’s campus</div>
+					<a id="dev-ops" href="dev-ops">
+						<div class="project-title">kCura</div>
+						<div class="project-tagline">A continuous deployment 'command center'</div>
+					</a>
+				</li>
+				<li>
+					<a id="myday" href="myday">
+						<div class="project-title">MyDay</div>
+						<div class="project-tagline">Meal tracking made effortless</div>
+					</a>
+				</li>
+				<li>
+					<a id="mse" href="mse">
+						<div class="project-title">Marquee Sports & Entertainment</div>
+						<div class="project-tagline">...</div>
 					</a>
 				</li>
 			<li>

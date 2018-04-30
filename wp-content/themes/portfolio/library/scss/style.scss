@@ -25,14 +25,20 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 @import "variables/_mixins";
 @import "variables/_grid";
 
-// @import "base/_typography";
+@import "base/_body";
+@import "base/_layout";
+@import "base/_media";
+@import "base/_typography";
 
+@import "components/_buttons";
+@import "components/_image-hero";
+@import "components/_navigation";
 
-@import "base/*";
-@import "components/*";
-@import "layout/*";
-
+@import "layout/_about";
+@import "layout/_footer";
 @import "layout/_header";
+@import "layout/_home";
+@import "layout/_project";
 
 /*********************
 LARGER MOBILE DEVICES
