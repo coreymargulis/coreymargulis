@@ -103,8 +103,8 @@
 													</div>
 
 												<?php elseif(get_sub_field('layout') == "fill-width") : ?>
-													<div class="media fill-width" style="background-image: url(<?php the_sub_field("image"); ?>)";>
-														<div class="caption"><?php the_sub_field("image-caption"); ?></div>
+													<div class="media fill-width">
+														<img src="<?php the_sub_field("image"); ?>" />
 													</div>
 
 												<?php endif; ?>
