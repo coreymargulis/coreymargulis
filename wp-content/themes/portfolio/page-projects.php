@@ -16,8 +16,8 @@
 		<body>
 				<li>
 					<a id="asset-location-recovery" href="asset-location-recovery">
-						<div class="project-title">Asset Location & Recovery</div>
-						<div class="project-tagline">Turning complexity into clarity</div>
+						<div class="project-title">Asset Location & Recovery Services</div>
+						<div class="project-tagline">Four apps to boost an analog company into the modern era</div>
 					</a>
 				</li>
 				<li>
@@ -39,6 +39,12 @@
 					</a>
 				</li>
 				<li>
+					<a id="facebook" href="facebook">
+						<div class="project-title">Facebook</div>
+						<div class="project-tagline">A system for Facebook's internal HR info and more</div>
+					</a>
+				</li>
+				<li>
 					<a id="mse" href="mse">
 						<div class="project-title">Marquee Sports & Entertainment</div>
 						<div class="project-tagline">...</div>
@@ -56,12 +62,6 @@
 					<div class="project-tagline">A website for a new, collaborative tower in Chicago’s Lawndale neighborhood</div>
 				</a>
 			</li>
-			<!-- <li>
-				<a id="pastel-artist" href="pastel-artist">
-					<div class="project-title">Pastel Artist</div>
-					<div class="project-tagline">A revamped website for an internationally renowned pastel artist</div>
-				</a>
-			</li> -->
 			<li>
 				<a id="whats-fresh" href="whats-fresh">
 					<div class="project-title">What’s Fresh</div>
@@ -77,22 +77,18 @@
  		</body>
 	</nav>
 
-<footer class="copyright">
-	© <?php echo date('Y'); ?> Corey Margulis
-</footer>
+	<footer class="copyright">
+		© <?php echo date('Y'); ?> Corey Margulis
+	</footer>
 
 	<div id="background"></div>
 
 	<script type="text/javascript">
-    $(document).ready(function() {
+	  $(document).ready(function() {
 	    $("#whats-fresh").hover(function() {
 	        $('body').css('background-color', '<?php the_field('title-color', 54); ?>');
-	          //$("#background").css('visibility', 'visible');
 	    }, function() {
-	        // if you want to remove background
-	        // on mouse out then uncomment below line
 	        $('body').css('background-color', '#efefef');
-	        // $("#background").css('visibility', 'hidden');
 	    })
 	    $("#commencement").hover(function() {
 	        $('body').css('background-color', '<?php the_field('title-color', 49); ?>');
@@ -104,18 +100,8 @@
 	    }, function() {
 	        $('body').css('background-color', '#efefef');
 	    })
-	    $("#pastel-artist").hover(function() {
-	        $('body').css('background-color', '<?php the_field('title-color', 59); ?>');
-	    }, function() {
-	        $('body').css('background-color', '#efefef');
-	    })
-	    $("#sbodylivan-galleries").hover(function() {
-	        $('body').css('background-color', '<?php the_field('title-color', 62); ?>');
-	    }, function() {
-	        $('body').css('background-color', '#efefef');
-	    })
-	    $("#conversations").hover(function() {
-	        $('body').css('background-color', '<?php the_field('title-color', 117); ?>');
+	    $("#myday").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 834); ?>');
 	    }, function() {
 	        $('body').css('background-color', '#efefef');
 	    })
@@ -139,69 +125,7 @@
 	    }, function() {
 	        $('body').css('background-color', '#efefef');
 	    })
-			// $("body a").hover(function() {
-	    //     $('li').css('background-color', '<?php the_field('title-color', 364); ?>');
-	    // }, function() {
-	    //     $('li').css('background-color', '#efefef');
-	    // })
 		});
 	</script>
 
 </div>
-
-
-<!-- <div class="profile-link-wrapper">
-	<a class="profile-link" id="trigger-overlay" href="#">About</a>
-</div>
-
-<div class="overlay overlay-slidedown">
-	<div class="overlay-close-container">
-		<a class="overlay-close" href="#">Close</a>
-	</div>
-	<div class="profile">
-		<?php the_field("profile") ?>
-	</div>
-</div> -->
-
-<!-- <script>
-	(function() {
-	  var triggerBttn = document.getElementById( 'trigger-overlay' ),
-	    overlay = document.querySelector( 'div.overlay' ),
-	    closeBttn = overlay.querySelector( 'a.overlay-close' );
-	    transEndEventNames = {
-	      'WebkitTransition': 'webkitTransitionEnd',
-	      'MozTransition': 'transitionend',
-	      'OTransition': 'oTransitionEnd',
-	      'msTransition': 'MSTransitionEnd',
-	      'transition': 'transitionend'
-	    },
-	    transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-	    support = { transitions : Modernizr.csstransitions };
-
-	  function toggleOverlay() {
-	    if( classie.has( overlay, 'open' ) ) {
-	      classie.remove( overlay, 'open' );
-	      classie.add( overlay, 'close' );
-	      var onEndTransitionFn = function( ev ) {
-	        if( support.transitions ) {
-	          if( ev.propertyName !== 'visibility' ) return;
-	          this.removeEventListener( transEndEventName, onEndTransitionFn );
-	        }
-	        classie.remove( overlay, 'close' );
-	      };
-	      if( support.transitions ) {
-	        overlay.addEventListener( transEndEventName, onEndTransitionFn );
-	      }
-	      else {
-	        onEndTransitionFn();
-	      }
-	    }
-	    else if( !classie.has( overlay, 'close' ) ) {
-	      classie.add( overlay, 'open' );
-	    }
-	  }
-
-	  triggerBttn.addEventListener( 'click', toggleOverlay );
-	  closeBttn.addEventListener( 'click', toggleOverlay );
-	})();
-</script> -->

@@ -109,6 +109,33 @@
 
 												<?php endif; ?>
 
+
+											<?php elseif( get_row_layout() == 'mp4-video' ): ?>
+
+												<?php
+													// Get the Video Fields
+													$video_mp4 =  get_field('mp4_video'); // MP4 Field Name
+													$video_webm  = get_field('webm_video'); // WEBM Field Name
+													$video_flv =  get_field('flv_video'); // FLV Field Name
+													$video_poster  = get_field('poster_image'); // Poster Image Field Name
+													// Build the  Shortcode
+													$attr =  array(
+													'mp4'      => $video_mp4,
+													'preload'  => 'auto',
+													'autoplay' => 'on',
+													'loop' => 'on',
+													'width' => '280',
+													'height' => '500'
+
+													);
+													?>
+													<div class="media">
+														<?php
+															// Display the Shortcode
+															echo wp_video_shortcode(  $attr );
+														?>
+													</div>
+
 											<?php elseif( get_row_layout() == 'video' ): ?>
 
 												<div class="video-wrap<?php if( get_sub_field('bkgd-color-change')){ ?> alt-pool<?php } ?>">

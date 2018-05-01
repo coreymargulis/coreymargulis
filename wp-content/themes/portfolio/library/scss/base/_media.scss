@@ -1,3 +1,15 @@
+.wp-video .mejs-container .mejs-controls {
+    visibility: hidden;
+}
+
+.wp-video {
+  margin: 0 auto;
+}
+
+.mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body {
+    background: none !important;
+}
+
 .media {
   max-width: 100%;
   margin: 2em auto 3.5em auto;
@@ -90,7 +102,7 @@
 
 .video-wrap {
   margin: 0 auto;
-  
+
   @include breakpoint($bp-medium) {
     max-width: 730px;
   }
