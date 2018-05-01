@@ -22,8 +22,8 @@
 				</li>
 				<li>
 					<a id="financial-services" href="financial-services">
-						<div class="project-title">Financial Services</div>
-						<div class="project-tagline">...</div>
+						<div class="project-title">Enterprise Apps</div>
+						<div class="project-tagline">Selections from tools designed at Truth Labs</div>
 					</a>
 				</li>
 				<li>

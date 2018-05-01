@@ -124,16 +124,19 @@
 													'preload'  => 'auto',
 													'autoplay' => 'on',
 													'loop' => 'on',
-													'width' => '280',
-													'height' => '500'
+													'width' => '1030',
+													'height' => '732'
 
 													);
 													?>
 													<div class="media">
 														<?php
 															// Display the Shortcode
-															echo wp_video_shortcode(  $attr );
+															//echo wp_video_shortcode(  $attr );
 														?>
+														<video controls autoplay loop name="media">
+															<source src="<?php the_sub_field("mp4_video"); ?>" type="video/mp4">
+														</video>
 													</div>
 
 											<?php elseif( get_row_layout() == 'video' ): ?>
