@@ -105,6 +105,7 @@
 												<?php elseif(get_sub_field('layout') == "fill-width") : ?>
 													<div class="media fill-width">
 														<img src="<?php the_sub_field("image"); ?>" />
+														<div class="caption"><?php the_sub_field("image-caption"); ?></div>
 													</div>
 
 												<?php endif; ?>
@@ -120,7 +121,7 @@
 
 													?>
 													<div class="media">
-														<video controls autoplay loop name="media">
+														<video autoplay loop name="media">
 															<source src="<?php the_sub_field("mp4_video"); ?>" type="video/mp4">
 														</video>
 													</div>
