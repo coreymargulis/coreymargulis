@@ -10,7 +10,7 @@
 		<div class="hero-image-caption"><?php the_field('hero-image-caption'); ?></div>
 	</div>
 
-	<div id="inner-content" class="wrap cf">
+	<div id="inner-content" class="wrap cf" style="background-color:<?php the_field('page-background-color'); ?>">
 
 		<div id="main" class="m-all t-all d-all cf" role="main">
 
@@ -115,25 +115,11 @@
 												<?php
 													// Get the Video Fields
 													$video_mp4 =  get_field('mp4_video'); // MP4 Field Name
-													$video_webm  = get_field('webm_video'); // WEBM Field Name
-													$video_flv =  get_field('flv_video'); // FLV Field Name
-													$video_poster  = get_field('poster_image'); // Poster Image Field Name
-													// Build the  Shortcode
-													$attr =  array(
-													'mp4'      => $video_mp4,
-													'preload'  => 'auto',
-													'autoplay' => 'on',
-													'loop' => 'on',
-													'width' => '1030',
-													'height' => '732'
 
-													);
+
+
 													?>
 													<div class="media">
-														<?php
-															// Display the Shortcode
-															//echo wp_video_shortcode(  $attr );
-														?>
 														<video controls autoplay loop name="media">
 															<source src="<?php the_sub_field("mp4_video"); ?>" type="video/mp4">
 														</video>

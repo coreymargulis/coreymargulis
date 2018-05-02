@@ -21,7 +21,7 @@
 					</a>
 				</li>
 				<li>
-					<a id="financial-services" href="financial-services">
+					<a id="enterprise" href="enterprise-apps">
 						<div class="project-title">Enterprise Apps</div>
 						<div class="project-tagline">Selections from business tools designed at Truth Labs</div>
 					</a>
@@ -130,6 +130,16 @@
 	    }, function() {
 	        $('body').css('background-color', '#efefef');
 	    })
+			$("#asset-location-recovery").hover(function() {
+					$('body').css('background-color', '<?php the_field('title-color', 830); ?>');
+			}, function() {
+					$('body').css('background-color', '#efefef');
+			})
+			$("#enterprise").hover(function() {
+					$('body').css('background-color', '<?php the_field('title-color', 884); ?>');
+			}, function() {
+					$('body').css('background-color', '#efefef');
+			})
 		});
 	</script>
 
