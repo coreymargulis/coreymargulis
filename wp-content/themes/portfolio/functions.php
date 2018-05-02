@@ -15,7 +15,7 @@ require_once( 'library/bones.php' );
 require_once( 'library/custom-post-type.php' );
 
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
-// require_once( 'library/admin.php' );
+require_once( 'library/admin.php' );
 
 /*********************
 LAUNCH BONES
@@ -63,9 +63,9 @@ add_action( 'after_setup_theme', 'bones_ahoy' );
 
 /************* OEMBED SIZE OPTIONS *************/
 
-if ( ! isset( $content_width ) ) {
-	$content_width = 640;
-}
+// if ( ! isset( $content_width ) ) {
+// 	$content_width = 640;
+// }
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
@@ -110,101 +110,22 @@ duplicate one of the lines in the array and name it according to your
 new image size.
 */
 
-/************* ACTIVE SIDEBARS ********************/
-
-// Sidebars & Widgetizes Areas
-function bones_register_sidebars() {
-	register_sidebar(array(
-		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'bonestheme' ),
-		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
-
-	/*
-	to add more sidebars or widgetized areas, just copy
-	and edit the above sidebar code. In order to call
-	your new sidebar just use the following code:
-
-	Just change the name to whatever your new
-	sidebar's id is, for example:
-
-	register_sidebar(array(
-		'id' => 'sidebar2',
-		'name' => __( 'Sidebar 2', 'bonestheme' ),
-		'description' => __( 'The second (secondary) sidebar.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
-
-	To call the sidebar in your template, you can just copy
-	the sidebar.php file and rename it to your sidebar's name.
-	So using the above example, it would be:
-	sidebar-sidebar2.php
-
-	*/
-} // don't remove this bracket!
 
 
-/************* COMMENT LAYOUT *********************/
-
-// Comment Layout
-function bones_comments( $comment, $args, $depth ) {
-   $GLOBALS['comment'] = $comment; ?>
-  <div id="comment-<?php comment_ID(); ?>" <?php comment_class('cf'); ?>>
-    <article  class="cf">
-      <header class="comment-author vcard">
-        <?php
-        /*
-          this is the new responsive optimized comment image. It used the new HTML5 data-attribute to display comment gravatars on larger screens only. What this means is that on larger posts, mobile sites don't have a ton of requests for comment images. This makes load time incredibly fast! If you'd like to change it back, just replace it with the regular wordpress gravatar call:
-          echo get_avatar($comment,$size='32',$default='<path_to_url>' );
-        */
-        ?>
-        <?php // custom gravatar call ?>
-        <?php
-          // create variable
-          $bgauthemail = get_comment_author_email();
-        ?>
-        <img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=40" class="load-gravatar avatar avatar-48 photo" height="40" width="40" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
-        <?php // end custom gravatar call ?>
-        <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'bonestheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'bonestheme' ),'  ','') ) ?>
-        <time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'bonestheme' )); ?> </a></time>
-
-      </header>
-      <?php if ($comment->comment_approved == '0') : ?>
-        <div class="alert alert-info">
-          <p><?php _e( 'Your comment is awaiting moderation.', 'bonestheme' ) ?></p>
-        </div>
-      <?php endif; ?>
-      <section class="comment_content cf">
-        <?php comment_text() ?>
-      </section>
-      <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-    </article>
-  <?php // </li> is added by WordPress automatically ?>
-<?php
-} // don't remove this bracket!
-
-
-/*
-This is a modification of a function found in the
-twentythirteen theme where we can declare some
-external fonts. If you're using Google Fonts, you
-can replace these fonts, change it in your scss files
-and be up and running in seconds.
-*/
-function bones_fonts() {
-  wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
-  wp_enqueue_style( 'googleFonts');
+/* LOGIN CUSTOMIZATIONS */
+add_filter(  'gettext',  'register_text'  );
+add_filter(  'ngettext',  'register_text'  );
+function register_text( $translated ) {
+     $translated = str_ireplace(  'Username or Email Address',  'Username',  $translated );
+     return $translated;
 }
 
-add_action('wp_print_styles', 'bones_fonts');
-
+add_filter(  'gettext',  'register_text2'  );
+add_filter(  'ngettext',  'register_text2'  );
+function register_text2( $translated2 ) {
+  $translated2 = str_ireplace(  'Log In',  'View Work',  $translated2 );
+  return $translated2;
+}
 
 
 /*ADD SCRIPTS*/
@@ -228,26 +149,8 @@ add_action('wp_enqueue_scripts', 'my_add_styles');
 
 
 
-/*TEST*/
-/*
-function flexslider()
-{
-    // Register the script like this for a plugin:
-    wp_register_script( 'flexslider', plugins_url( '/js/flexslider.js', __FILE__ ) );
-    // or
-    // Register the script like this for a theme:
-    wp_register_script( 'flexslider', get_template_directory_uri() . '/js/flexslider.js' );
+/*TESTS*/
 
-    // For either a plugin or a theme, you can then enqueue the script:
-    wp_enqueue_script( 'flexslider' );
-}
-add_action( 'wp_enqueue_scripts', 'flexslider' );
-*/
 
-/*PAGE TRANSITION*/
-/*
-include_once( 'wp-medium/WP_Medium_Class.php' );
-$wp_medium = new WP_Medium_Class();
-*/
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

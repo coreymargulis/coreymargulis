@@ -16,14 +16,14 @@
 		<body>
 				<li>
 					<a id="asset-location-recovery" href="asset-location-recovery">
-						<div class="project-title">Asset Location & Recovery Services</div>
-						<div class="project-tagline">Four apps to boost an analog company into the modern era</div>
+						<div class="project-title">Location & Recovery Services</div>
+						<div class="project-tagline">A suite of tools to modernize a transportation logistics company</div>
 					</a>
 				</li>
 				<li>
 					<a id="financial-services" href="financial-services">
 						<div class="project-title">Enterprise Apps</div>
-						<div class="project-tagline">Selections from tools designed at Truth Labs</div>
+						<div class="project-tagline">Selections from business tools designed at Truth Labs</div>
 					</a>
 				</li>
 				<li>
@@ -38,7 +38,7 @@
 						<div class="project-tagline">Meal tracking made effortless</div>
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a id="facebook" href="facebook">
 						<div class="project-title">Facebook</div>
 						<div class="project-tagline">A system for Facebook's internal HR info and more</div>
@@ -49,7 +49,7 @@
 						<div class="project-title">Marquee Sports & Entertainment</div>
 						<div class="project-tagline">...</div>
 					</a>
-				</li>
+				</li> -->
 			<li>
 				<a id="pool-party" href="pool-party">
 					<div class="project-title">Pool Party</div>
@@ -100,11 +100,6 @@
 	    }, function() {
 	        $('body').css('background-color', '#efefef');
 	    })
-	    $("#myday").hover(function() {
-	        $('body').css('background-color', '<?php the_field('title-color', 834); ?>');
-	    }, function() {
-	        $('body').css('background-color', '#efefef');
-	    })
 	    $("#campus-signage").hover(function() {
 	        $('body').css('background-color', '<?php the_field('title-color', 364); ?>');
 	    }, function() {
@@ -122,6 +117,16 @@
 	    })
 			$("#truth-labs").hover(function() {
 	        $('body').css('background-color', '<?php the_field('title-color', 793); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+			$("#myday").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 834); ?>');
+	    }, function() {
+	        $('body').css('background-color', '#efefef');
+	    })
+			$("#dev-ops").hover(function() {
+	        $('body').css('background-color', '<?php the_field('title-color', 856); ?>');
 	    }, function() {
 	        $('body').css('background-color', '#efefef');
 	    })
