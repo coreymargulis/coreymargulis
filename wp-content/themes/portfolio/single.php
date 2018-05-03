@@ -52,9 +52,9 @@
 							     // loop through the rows of data
 							    while ( have_rows('section') ) : the_row();
 
-							        if( get_row_layout() == 'text' ):
+							        if( get_row_layout() == 'text' ): ?>
 
-							        	the_sub_field('text-field');
+							        	<div class="text"><?php the_sub_field('text-field'); ?></div> <?php
 
 							        elseif( get_row_layout() == 'section-title' ): ?>
 
@@ -103,7 +103,7 @@
 													</div>
 
 												<?php elseif(get_sub_field('layout') == "fill-width") : ?>
-													<div class="media fill-width">
+													<div class="media fill-width<?php if( get_sub_field('bkgd-color-change')){ ?> alt" style="background-color:<?php the_sub_field('custom-color'); ?><?php } ?>"">
 														<img src="<?php the_sub_field("image"); ?>" />
 														<div class="caption"><?php the_sub_field("image-caption"); ?></div>
 													</div>
@@ -115,10 +115,7 @@
 
 												<?php
 													// Get the Video Fields
-													$video_mp4 =  get_field('mp4_video'); // MP4 Field Name
-
-
-
+													$video_mp4 =  get_field('mp4_video');
 													?>
 													<div class="media">
 														<video autoplay loop name="media">

@@ -1,13 +1,17 @@
-.wp-video .mejs-container .mejs-controls {
-    visibility: hidden;
-}
+// .wp-video .mejs-container .mejs-controls {
+//     visibility: hidden;
+// }
 
-.wp-video {
-  margin: 0 auto;
-}
+// .wp-video {
+//   margin: 0 auto;
+// }
 
-.mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body {
-    background: none !important;
+// .mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body {
+//     background: none !important;
+// }
+
+video {
+  max-width: 100%;
 }
 
 .media {

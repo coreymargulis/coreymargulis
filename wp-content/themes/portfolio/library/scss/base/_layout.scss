@@ -20,6 +20,10 @@ h1, h2, h3, h4, p, ul, .inset-container {
 	}
 }
 
+.text {
+	margin-bottom: 3em;
+}
+
 .inset-container {
 	margin: 2em auto 3.5em auto;
 
@@ -34,8 +38,8 @@ h1, h2, h3, h4, p, ul, .inset-container {
 
 .alt {
   position: relative;
-  padding-top: 4em !important;
-  padding-bottom: 4em !important;
+  // padding-top: 4em !important;
+  // padding-bottom: 4em !important;
 	margin-bottom: 0;
 	margin-top: 0;
 
