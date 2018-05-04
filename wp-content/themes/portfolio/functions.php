@@ -110,7 +110,20 @@ duplicate one of the lines in the array and name it according to your
 new image size.
 */
 
+/************* ACTIVE SIDEBARS ********************/
 
+// Sidebars & Widgetizes Areas
+function bones_register_sidebars() {
+	register_sidebar(array(
+		'id' => 'sidebar1',
+		'name' => __( 'Sidebar 1', 'bonestheme' ),
+		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+}
 
 /* LOGIN CUSTOMIZATIONS */
 add_filter(  'gettext',  'register_text'  );

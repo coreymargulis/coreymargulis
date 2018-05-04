@@ -16,14 +16,14 @@
 		<body>
 				<li>
 					<a id="asset-location-recovery" href="asset-location-recovery">
-						<div class="project-title">Location & Recovery Services</div>
-						<div class="project-tagline">A suite of tools to modernize a transportation logistics company</div>
+						<div class="project-title">Repossession Management</div>
+						<div class="project-tagline">Bringing an analog company into the modern era</div>
 					</a>
 				</li>
 				<li>
 					<a id="enterprise" href="enterprise-apps">
-						<div class="project-title">Enterprise Apps</div>
-						<div class="project-tagline">Selections from business tools designed at Truth Labs</div>
+						<div class="project-title">Donnelley Financial</div>
+						<div class="project-tagline">A completely redesigned tool to prepare and submit SEC filings</div>
 					</a>
 				</li>
 				<li>
