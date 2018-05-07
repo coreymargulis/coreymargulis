@@ -1,8 +1,8 @@
 .hero-image-container {
-  height: 40vh;
+  height: 60vh;
 
   @include breakpoint($bp-medium) {
-    height: 60vh;
+    height: 80vh;
   }
 
   .hero-image {
@@ -26,10 +26,10 @@
     padding-right: 1.5em;
   }
 
-  @media screen and ( max-height: 700px ) and (min-width: 481px){
-    height: 400px;
-  }
-  @media screen and ( max-height: 700px ){
-    height: 300px;
-  }
+  // @media screen and ( max-height: 700px ) and (min-width: 481px){
+  //   height: 400px;
+  // }
+  // @media screen and ( max-height: 700px ){
+  //   height: 300px;
+  // }
 }
