@@ -19,7 +19,10 @@
 			}
 		}
 		h3 {
-			margin: 1.75em auto 0.75em;
+			margin: 1.75em 1.25em 0.75em;
+			@include breakpoint($bp-medium) {
+				margin: 1.75em auto 0.75em;
+			}
 		}
 
 		ul, ol {

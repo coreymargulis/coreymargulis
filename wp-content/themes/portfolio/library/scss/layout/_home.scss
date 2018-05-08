@@ -35,7 +35,7 @@
   }
   h2 {
     font-size: 16px;
-    -webkit-font-smoothing: auto;
+    // -webkit-font-smoothing: auto;
     padding: 0;
     max-width: 100%;
     a {
@@ -73,7 +73,7 @@ nav {
 		line-height: 1.45;
     border-bottom: 1px solid $color-border;
     text-rendering: optimizelegibility;
-  	-webkit-font-smoothing: auto;
+  	//-webkit-font-smoothing: auto;
     list-style: none;
 
     &:first-child {
