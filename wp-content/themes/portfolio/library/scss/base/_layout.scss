@@ -24,6 +24,10 @@ h1, h2, h3, h4, p, ul, .inset-container {
 	@include breakpoint($bp-medium) {
 		margin: 0 0 3em;
 	}
+
+	li {
+		margin-bottom: 1em;
+	}
 }
 
 .inset-container {

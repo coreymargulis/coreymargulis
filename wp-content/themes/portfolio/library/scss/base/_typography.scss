@@ -116,3 +116,8 @@ p, ul {
 	color: $color-text-light;
 	text-align: left !important;
 }
+
+b, strong, .strong {
+	font-weight: normal !important;
+	font-family: $serif-bold;
+}
