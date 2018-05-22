@@ -21,15 +21,15 @@
 					</a>
 				</li>
 				<li>
-					<a id="donnelley" href="donnelley">
-						<div class="project-title">Donnelley Financial</div>
-						<div class="project-tagline">A completely redesigned tool to prepare and submit SEC filings</div>
-					</a>
-				</li>
-				<li>
 					<a id="dev-ops" href="dev-ops">
 						<div class="project-title">kCura</div>
 						<div class="project-tagline">A continuous deployment 'command center'</div>
+					</a>
+				</li>
+				<li>
+					<a id="donnelley" href="donnelley">
+						<div class="project-title">Donnelley Financial</div>
+						<div class="project-tagline">A completely redesigned tool to prepare and submit SEC filings</div>
 					</a>
 				</li>
 				<li>
