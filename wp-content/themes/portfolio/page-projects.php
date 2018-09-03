@@ -62,12 +62,12 @@
 					<div class="project-tagline">A website for a new, collaborative tower in Chicago’s Lawndale neighborhood</div>
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a id="whats-fresh" href="whats-fresh">
 					<div class="project-title">What’s Fresh</div>
 					<div class="project-tagline">Two ways to find out what produce is in season</div>
 				</a>
-			</li>
+			</li> -->
 			<li>
 				<a id="commencement" href="commencement">
 					<div class="project-title">Commencement</div>
