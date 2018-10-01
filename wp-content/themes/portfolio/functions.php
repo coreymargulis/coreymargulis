@@ -140,6 +140,11 @@ function register_text2( $translated2 ) {
   return $translated2;
 }
 
+function my_password_protected_theme_file( $file ) {
+	return get_stylesheet_directory() . '/password-protected-login.php';
+}
+add_filter( 'password_protected_theme_file', 'my_password_protected_theme_file' );
+
 
 /*ADD SCRIPTS*/
 
